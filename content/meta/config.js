@@ -18,7 +18,7 @@ module.exports = {
   manifestName: "jo3rn.de - utilize technology",
   manifestShortName: "jo3rn.de", // max 12 characters
   manifestStartUrl: "/index.html",
-  manifestBackgroundColor: "white",
+  manifestBackgroundColor: "#335b6d",
   manifestThemeColor: "#666",
   manifestDisplay: "standalone",
 
