@@ -63,6 +63,8 @@ Die Wahl eines AMD-Motherboards ebnete den Weg für den [AMD Ryzen 7 2700X](http
 
 Beim RAM geht es nur um zwei Dinge: Größe und Übertragungsrate. Ein 32GB starker DDR4-SDRAM mit einer Taktfrequenz von 3200 MHz macht zwei dicke grüne Haken an beide Kriterien. Dass am [Corsair Vengeance RGB PRO 32GB](https://amzn.to/2J24pQK) auch noch LEDs montiert sind, ist reiner Zufall.
 
+![Meme: Mehrere Menschen stehen um einen Kuchen. Bis auf eine Person halten alle ein Messer zum Anschneiden des Kuchens. Auf dem Kuchen steht "Processing Tasks". Auf den Personen, die das Messer halten, steht "WIFI/LAN", "CPU", "GPU", "RAM", "SSD/HDD". Auf der Person, die nicht das Messer hält, steht "RGB".](./rgb-meme.jpg)
+
 ## Grafikkarte (83,99 €)
 
 Das Motherboard besitzt einen DisplayPort 1.2 und HDMI 2.0 Ausgang. Da ich niedrige Grafik-Anforderungen habe, sollte dies ausreichen. So dachte ich beim ersten Zusammenbau des PCs. Bis beim Booten der Bildschirm schwarz blieb. Denn der Ryzen 2700X und fast alle anderen AMD Prozessoren [haben keinen Grafikkern](https://www.reddit.com/r/Amd/comments/8gflvb/ryzen_2700x_no_onboard_video/). Dass ich das über ein Reddit-Post herausfinden musste, liegt an der fehlenden Information auf der [offiziellen Produktseite](https://www.amd.com/en/products/cpu/amd-ryzen-7-2700x) (unter „Related Products“ steht allerdings bei allen Einträgen „Discrete Graphics Card Required“, das hätte mich hellhörig machen sollen). Also schnell noch die [MSI GeForce GT 1030 2GH LP OC](https://amzn.to/2U0L32u) bestellt und nachgerüstet. Somit verstaubt zumindest meine kleine aber feine Steam-Bibliothek nicht komplett.
