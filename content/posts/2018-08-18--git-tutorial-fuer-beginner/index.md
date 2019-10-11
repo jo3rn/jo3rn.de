@@ -9,7 +9,7 @@ author: jo3rn
 
 Allgemein gesprochen hat man einen Ordner (repository). Änderungen an dessen Inhalt werden kontrolliert gespeichert und somit zurückverfolgbar und wiederherstellbar. „Verteilt“ bedeutet, dass verschiedene Versionen des Ordners existieren können, z.B. wenn mehrere Nutzer gleichzeitig etwas bearbeiten. Möchte man einen einheitlichen Stand haben, besteht die Möglichkeit, diese Versionen zusammenzuführen.
 
-Wie man Git auf seinen Rechner bekommt, wird auf der [offiziellen Webseite](https://git-scm.com/downloads) beschrieben. Nachdem Git installiert ist, steht der Befehl git in der Kommandozeile zur Verfügung. Dies kannst du mit dem Befehl git --version testen. Dieses Kommando liefert bei mir folgenden Output:
+Wie man Git auf seinen Rechner bekommt, wird auf der [offiziellen Webseite](https://git-scm.com/downloads) beschrieben. Nachdem Git installiert ist, steht der Befehl `git` in der Kommandozeile zur Verfügung. Dies kannst du mit dem Befehl `git --version` testen. Dieses Kommando liefert bei mir folgenden Output:
 
 ``` shell
 C:\Users\jo3rn> git --version
@@ -87,7 +87,7 @@ specialText.onmouseout = function () {
 
 ```
 
-Nun liegen sie in deinem **Working Directory**, zunächst komplett losgelöst von Git. In diesem Zustand können keine Änderungen nach verfolgt werden. Die Dateien müssen noch mit git add zum sogenannten Staging hinzugefügt werden. Dies kann man entweder einzeln mit Dateinamen machen, z.B. `git add index.html` oder mit allen Dateien in einem Schritt: `git add *`.
+Nun liegen sie in deinem **Working Directory**, zunächst komplett losgelöst von Git. In diesem Zustand können keine Änderungen nach verfolgt werden. Die Dateien müssen noch mit `git add` zum sogenannten Staging hinzugefügt werden. Dies kann man entweder einzeln mit Dateinamen machen, z.B. `git add index.html` oder mit allen Dateien in einem Schritt: `git add *`.
 
 Damit signalisierst du Git, dass die ausgewählten Dateien in die Versionsverwaltung aufgenommen werden können (aber es noch nicht sind!). Nach dem add befinden sie sich in einem Zwischenzustand: keine reine Arbeitsdatei auf deinem Rechner, aber auch noch keine an Git übergebene Version. In welchem Zustand sich welche Datei befindet, kannst du mit `git status` einsehen:
 
@@ -168,7 +168,7 @@ Dabei spezifizieren wir hinter `git push` zu welchem Branch (`master`) in welche
 
 Moment mal! Was ist denn überhaupt ein Branch?
 
-Zunächst gibt es beim Anlegen eines neuen Repositorys lediglich einen Branch, der `master` genannt wird. Man kann nun einen neuen Branch (Zweig) erstellen und ihn `neues_feature` nennen. Dabei nimmt kopiert man im übertragenen Sinne den aktuellen Stand in einen neuen Ordner. In diesem neuen Ordner bastelt man weiter am Code, ohne den Stand aus dem alten Ordner zu beeinflussen. Gleichzeitig kann von dem alten Stand eine weitere Kopie gemacht werden, z.B. mit dem Branch `ein_zweites_feature`. Irgendwann sind die Arbeiten an dem neuen Feature fertig und man kann mit einem sogenannten Pull Request dieses neue Feature in den alten Stand integrieren. Dies geht dann normalerweise automatisch *git magic*. Sollte der alte Stand währendessen weiterbearbeitet sein, können u.U. Konflikte auftreten, wenn z.B. in der gleichen Codezeile einer Datei in zwei Branches etwas geändert wurde. Dies kann passieren, wenn z.B. schon andere Features in den Master-Branch eingeflossen sind.
+Zunächst gibt es beim Anlegen eines neuen Repositorys lediglich einen Branch, der `master` genannt wird. Man kann nun einen neuen Branch (Zweig) erstellen und ihn `neues_feature` nennen. Dabei nimmt kopiert man im übertragenen Sinne den aktuellen Stand in einen neuen Ordner. In diesem neuen Ordner bastelt man weiter am Code, ohne den Stand aus dem alten Ordner zu beeinflussen. Gleichzeitig kann von dem alten Stand eine weitere Kopie gemacht werden, z.B. mit dem Branch `ein_zweites_feature`. Irgendwann sind die Arbeiten an dem neuen Feature fertig und man kann mit einem sogenannten Pull Request dieses neue Feature in den alten Stand integrieren. Dies geht dann normalerweise automatisch \*git magic\*. Sollte der alte Stand währendessen weiterbearbeitet sein, können u.U. Konflikte auftreten, wenn z.B. in der gleichen Codezeile einer Datei in zwei Branches etwas geändert wurde. Dies kann passieren, wenn z.B. schon andere Features in den Master-Branch eingeflossen sind.
 
 Wie dieses Branching genau abläuft, ist Stoff für einen anderen Beitrag. Das hier ist zunächst ein erster Einblick in die Möglichkeiten von Git. Wenn du dich mit dem bisher Besprochenen sicher fühlst, kannst du dich auch auf eigene Faust über weitere Themen informieren. Einige Ansatzpunkte sind z.B.:
 
