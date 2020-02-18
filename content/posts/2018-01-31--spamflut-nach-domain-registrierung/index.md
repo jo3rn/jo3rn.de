@@ -18,3 +18,5 @@ Manche Mailversender berufen sich kleingedruckt auf ein Gesetz mit dem an Ironie
 Während sich mein Postfach nach und nach weiter füllt, frage ich mich, wie hoch wohl als Anbieter von Webdienstleistungen der Return of Spam ist. Unaufgeforderte Angebotsunterbreitung ist nicht unbedingt eine vertrauensbildende Geschäftspraktik, vielleicht erschließt sich aber nur mir nicht das bigger picture.
 
 [Es gibt einen zufriedenstellenden Weg, wie man mit Scam-Mails umgehen sollte](https://www.youtube.com/watch?v=jPajqAJWiNA), etwas ähnliches wünsche ich mir für diese Leute auch.
+
+###### Cover photo by jo3rn

@@ -26,3 +26,5 @@ Auf dem Android-basierten Handy bekam ich ab 2016 im Play Store zudem immer öft
 Fazit: Den Erwartungen wurde es leider nicht gerecht. Eventuell war dieses Pionier-Projekt für das Unternehmen notwendig, denn das Fairphone 2 scheint hinsichtlich der ursprünglichen Ziele besser aufgestellt. Mich haben sie als Kunden allerdings nach dieser Aktion verloren.
 
 Welches Handy das Fairphone ablöste, erfährst du im nächsten Beitrag.
+
+###### Cover photo by jo3rn

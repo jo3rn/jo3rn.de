@@ -26,3 +26,5 @@ Das Manövrieren des Fahrzeugs beruht auf den aggregierten Daten verschiedener S
 Ein Inselprojekt wie eingangs beschrieben wird der Betrieb in Bad Birnbach für Deutschland aber nicht mehr lange sein. Unter dem sperrigen Projekttitel [nachfragegesteuerter-autonom-fahrender Bus](https://www.naf-bus.de/) dreht voraussichtlich ab 4. Mai 2019 ein mit Steuermitteln geförderter Bus der [EasyMile](https://easymile.com/) Konkurrenz [navya](https://navya.tech/) seine Runden im öffentlichen Bereich von Keitum, einem Ortsteil von Sylt (es bleibt also doch ein Inselprojekt).
 
 Auch der Einsatz auf privatem Gelände kann helfen, die Gesellschaft auf die (schleichende) Revolution der Mobilität vorzubereiten. Prädestinierte Areale sind z.B. weitläufige Universitäts- oder Messegelände, wie auf dem [Greentec Campus](https://www.shz.de/lokales/nordfriesland-tageblatt/autonom-fahrender-bus-mit-emil-kostenlos-durch-die-zukunft-fahren-id22161282.html) praktiziert oder für den [Hessentag 2019](https://osthessen-news.de/n11555086/fahrerlose-shuttlebusse-zum-hessentag-2019-vertrag-auf-cebit-unterzeichnet.html) geplant.
+
+###### Cover photo by jo3rn
