@@ -9,7 +9,7 @@ color:
   primary:
     v900: '#3e2723'
     v800: '#4e342e'
-    v700: &colvariantor-primary-variant '#5d4037'
+    v700: &color-primary-variant '#5d4037'
     v600: '#6d4c41'
     v500: '#795548'
     v400: '#8d6e63' # white text
