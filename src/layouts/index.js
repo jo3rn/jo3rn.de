@@ -12,7 +12,8 @@ export const ThemeContext = React.createContext(null);
 export const ScreenWidthContext = React.createContext(0);
 export const FontLoadedContext = React.createContext(false);
 
-import themeObjectFromYaml from "../theme/theme.yaml";
+import themeObjectFromYamlDark from "../theme/dark.yaml";
+import themeObjectFromYamlLight from "../theme/light.yaml";
 
 class Layout extends React.Component {
   constructor() {
@@ -23,7 +24,7 @@ class Layout extends React.Component {
       font600loaded: false,
       screenWidth: 0,
       headerMinimized: false,
-      theme: themeObjectFromYaml
+      theme: themeObjectFromYamlLight
     };
 
     if (typeof window !== `undefined`) {
@@ -40,6 +41,11 @@ class Layout extends React.Component {
     });
     if (typeof window !== "undefined") {
       window.addEventListener("resize", this.resizeThrottler, false);
+      const locallyStoredThemeMode = localStorage.getItem("theme");
+      const themeMode = JSON.parse(locallyStoredThemeMode)
+        ? JSON.parse(locallyStoredThemeMode)
+        : "dark";
+      this.setThemeMode(themeMode);
     }
   }
 
@@ -51,12 +57,21 @@ class Layout extends React.Component {
     this.setState({ screenWidth: getScreenWidth() });
   };
 
-  isHomePage = () => {
-    if (this.props.location.pathname === "/") {
-      return true;
-    }
+  toggleTheme = () => {
+    this.setThemeMode(this.state.theme === themeObjectFromYamlLight ? "dark" : "light");
+  };
 
-    return false;
+  setThemeMode = mode => {
+    localStorage.setItem("theme", JSON.stringify(mode));
+    switch (mode) {
+      case "light":
+        this.setState({ theme: themeObjectFromYamlLight });
+        break;
+      case "dark":
+      default:
+        this.setState({ theme: themeObjectFromYamlDark });
+        break;
+    }
   };
 
   loadFont = (name, family, weight) => {
@@ -119,6 +134,7 @@ class Layout extends React.Component {
                       path={this.props.location.pathname}
                       pages={pages}
                       theme={this.state.theme}
+                      toggleTheme={this.toggleTheme}
                     />
                     <main>{children}</main>
                     <Footer html={footnoteHTML} theme={this.state.theme} />
@@ -141,6 +157,7 @@ class Layout extends React.Component {
                         padding: 0;
                       }
                       body {
+                        background: ${this.state.theme.background.color};
                         font-family: ${this.state.font400loaded
                           ? "'Open Sans', sans-serif;"
                           : "Arial, sans-serif;"};

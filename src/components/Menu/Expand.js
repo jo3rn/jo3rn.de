@@ -19,8 +19,8 @@ const Expand = props => {
 
         @below desktop {
           .more {
-            background: ${theme.color.neutral.white};
-            border: 1px solid ${theme.color.brand.primary};
+            background: ${theme.surface.color};
+            border: 1px solid ${theme.text.color.on.secondary_variant};
             border-radius: ${theme.size.radius.small} ${theme.size.radius.small} 0 0;
             border-bottom: none;
             position: absolute;
@@ -36,7 +36,7 @@ const Expand = props => {
               outline: none;
 
               :global(svg) {
-                fill: ${theme.color.brand.primary};
+                fill: ${theme.text.color.primary};
               }
             }
 

@@ -67,12 +67,17 @@ const NextPrev = props => {
         }
 
         h4 {
+          color: ${theme.text.color.link};
           font-weight: 600;
           margin: 0;
           font-size: 1.1em;
+
+          :hover {
+            color: ${theme.text.color.primary_variant};
+          }
         }
         time {
-          color: ${theme.color.neutral.gray.g};
+          color: ${theme.text.color.primary};
           display: block;
           font-weight: 400;
           font-size: 0.8em;

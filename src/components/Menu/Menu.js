@@ -5,9 +5,12 @@ require("core-js/fn/array/from");
 import { FaHome } from "react-icons/fa/";
 import { FaEnvelope } from "react-icons/fa/";
 import { FaTag } from "react-icons/fa/";
+import { FaRegMoon } from "react-icons/fa/";
 
 import Item from "./Item";
 import Expand from "./Expand";
+
+import themeObjectFromYamlLight from "../../theme/light.yaml";
 
 class Menu extends React.Component {
   constructor(props) {
@@ -42,7 +45,8 @@ class Menu extends React.Component {
     screenWidth: PropTypes.number.isRequired,
     fontLoaded: PropTypes.bool.isRequired,
     pages: PropTypes.array.isRequired,
-    theme: PropTypes.object.isRequired
+    theme: PropTypes.object.isRequired,
+    toggleTheme: PropTypes.func.isRequired
   };
 
   componentDidMount() {
@@ -145,25 +149,40 @@ class Menu extends React.Component {
         <nav className={`menu ${open ? "open" : ""}`} rel="js-menu">
           <ul className="itemList" ref={this.itemList}>
             {this.items.map(item => (
-              <Item item={item} key={item.label} icon={item.icon} theme={theme} />
+              <Item
+                item={item}
+                key={item.label}
+                icon={item.icon}
+                theme={theme}
+                onclick={this.props.toggleTheme}
+              />
             ))}
           </ul>
           {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} theme={theme} />}
-          {open &&
-            screenWidth >= 1024 && (
-              <ul className="hiddenItemList">
-                {this.state.hiddenItems.map(item => (
-                  <Item item={item} key={item.label} hiddenItem theme={theme} />
-                ))}
-              </ul>
-            )}
+          {open && screenWidth >= 1024 && (
+            <ul className="hiddenItemList">
+              {this.state.hiddenItems.map(item => (
+                <Item
+                  item={item}
+                  key={item.label}
+                  hiddenItem
+                  theme={theme}
+                  onclick={this.props.toggleTheme}
+                />
+              ))}
+            </ul>
+          )}
+          <span className="toggleTheme" onClick={this.props.toggleTheme}>
+            <FaRegMoon />
+            {theme === themeObjectFromYamlLight ? "ON" : "OFF"}
+          </span>
         </nav>
 
         {/* --- STYLES --- */}
         <style jsx>{`
           .menu {
             align-items: center;
-            background: ${theme.color.neutral.white};
+            background: ${theme.surface.color};
             bottom: 0;
             display: flex;
             flex-grow: 1;
@@ -196,7 +215,7 @@ class Menu extends React.Component {
                 right: ${theme.space.m};
                 top: 0;
                 height: 1px;
-                background: ${theme.color.brand.primary};
+                background: ${theme.surface.color};
               }
 
               &.open {
@@ -229,8 +248,8 @@ class Menu extends React.Component {
               list-style: none;
               margin: 0;
               position: absolute;
-              background: ${theme.background.color.primary};
-              border: 1px solid ${theme.line.color};
+              background: ${theme.surface.color};
+              border: 1px solid ${theme.line.color.primary};
               top: 48px;
               right: ${theme.space.s};
               display: flex;
@@ -243,7 +262,7 @@ class Menu extends React.Component {
 
               &:after {
                 content: "";
-                background: ${theme.background.color.primary};
+                background: ${theme.background.color};
                 z-index: 10;
                 top: -10px;
                 right: -1px;
@@ -270,6 +289,16 @@ class Menu extends React.Component {
               :global(.fixed) & {
                 top: 44px;
               }
+            }
+          }
+          .toggleTheme {
+            padding: ${theme.space.inset.s};
+            color: ${theme.text.color.on.surface};
+            cursor: pointer;
+            white-space: nowrap;
+
+            :hover {
+              color: ${theme.text.color.primary_variant};
             }
           }
         `}</style>

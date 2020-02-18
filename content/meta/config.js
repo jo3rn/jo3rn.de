@@ -18,8 +18,8 @@ module.exports = {
   manifestName: "jo3rn.de - utilize technology",
   manifestShortName: "jo3rn.de", // max 12 characters
   manifestStartUrl: "/index.html",
-  manifestBackgroundColor: "#335b6d",
-  manifestThemeColor: "#666",
+  manifestBackgroundColor: "#121212",
+  manifestThemeColor: "#8c7b75",
   manifestDisplay: "standalone",
 
   // gravatar

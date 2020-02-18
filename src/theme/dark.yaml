@@ -1,5 +1,35 @@
 # OPTIONS
 
+# COLOR
+color:
+  white: &color-white '#ffffff'
+  black: &color-black '#000000'
+  background: &color-background '#121212' # white text
+  surface: &color-surface '#121212' # white text
+  primary:
+    v900: '#1b0000'
+    v800: '#260e04'
+    v700: &color-primary-variant '#321911'
+    v600: '#40241a'
+    v500: '#4b2c20'
+    v400: '#5f4339'
+    v300: '#725b53' # white text
+    v200: &color-primary '#8c7b75' # black text
+    v100: '#a69b97'
+    v50: '#bdb9b7'
+  secondary:
+    v900: '#003300'
+    v800: '#005005'
+    v700: &color-secondary-variant '#00600f'
+    v600: '#00701a'
+    v500: '#087f23' # white text
+    v400: '#338a3e' # black text
+    v300: '#519657'
+    v200: &color-secondary '#75a478'
+    v100: '#97b498'
+    v50: '#b6c2b7'
+  special:
+    attention: &color-special-attention orange
 # SPACE
 space :
   # space options
@@ -35,33 +65,6 @@ size:
   radius:
     default: 10px
     small: 5px
-# COLOR
-color:
-  # color options
-  neutral:
-    white: &color-white '#ffffff'
-    gray:
-      a: &color-gray-1 '#fafaf9'
-      b: &color-gray-2 '#f3f2f2'
-      c: &color-gray-3 '#ecebea'
-      d: '#dddbda'
-      e: '#c9c7c5'
-      f: '#b0adab'
-      g: '#969492'
-      h: '#706e6b'
-      i: '#514f4d'
-      j: &color-gray-10 '#3e3e3c'
-      k: '#2b2826'
-    black: &color-black '#000000'
-  brand:
-    primary: &color-brand-primary '#709425'
-    primaryActive: '#709425'
-    light: '#709425'
-    lightActive: '#709425'
-    dark: '#709425'
-    darkActive: '#709425'
-  special:
-    attention: &color-special-attention orange
 # FONT
 font:
   # font options
@@ -96,18 +99,26 @@ time:
 
 
 # GENERAL TOKENS
-background:
-  color:
-    primary: *color-white
-    alt: *color-gray-1
-    brand: *color-brand-primary
+background: 
+  color: *color-background
+surface:
+  color: *color-surface
 text:
   family: *font-family-target
   color:
-    primary: *color-gray-10
-    primaryInverse: *color-white
-    brand: *color-brand-primary
+    on:
+      primary: *color-black
+      primary_variant: *color-white
+      secondary: *color-black
+      secondary_variant: *color-white
+      background: *color-white
+      surface: *color-white
+    primary: *color-primary
+    primary_variant: *color-primary-variant
+    secondary: *color-secondary
+    secondary_variant: *color-secondary-variant
     attention: *color-special-attention
+    link: *color-secondary
   lineHeight:
     default: *font-line-height-l
   maxWidth:
@@ -125,26 +136,26 @@ heading:
     h3: *font-line-height-xs
   weight: 600
 line:
-  color: *color-gray-3
+  color: *color-secondary
 icon:
-  color: *color-brand-primary
+  color: *color-secondary
 
 
 # COMPONENT TOKENS
 hero:
   h1:
     size: *font-size-xxl
-    color: *color-gray-3
+    color: *color-primary
     lineHeight: *font-line-height-xs
   background: 'linear-gradient(0deg, #E0306E, #6438B5)'
 blog:
   h1:
+    color: *color-primary
     size: *font-size-l
     lineHeight: *font-line-height-xs
-    hoverColor: *color-brand-primary
+    hoverColor: *color-secondary-variant
 header:
   height:
     default: 80px
     fixed: 50px;
     homepage: 100px;
-

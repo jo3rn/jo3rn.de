@@ -21,7 +21,7 @@ const Hero = props => {
           background: ${theme.hero.background};
           background-image: url(${backgrounds.mobile});
           background-size: cover;
-          color: ${theme.text.color.primary.inverse};
+          color: ${theme.text.color.on.primary_variant};
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
@@ -47,7 +47,7 @@ const Hero = props => {
               content: "›";
               color: ${theme.text.color.attention};
               margin: 0 ${theme.space.xs} 0 0;
-              text-shadow: 0 0 ${theme.space.s} ${theme.color.neutral.gray.k};
+              text-shadow: 0 0 ${theme.space.s} ${theme.color.secondary.v200};
             }
             &::after {
               content: "‹";
@@ -57,7 +57,7 @@ const Hero = props => {
         }
 
         button {
-          background: ${theme.background.color.brand};
+          background: ${theme.icon.color};
           border: 0;
           border-radius: 50%;
           font-size: ${theme.font.size.m};
@@ -68,15 +68,15 @@ const Hero = props => {
 
           &:focus {
             outline-style: none;
-            background: ${theme.color.brand.primary.active};
+            background: ${theme.background.color};
           }
 
           :global(svg) {
             position: relative;
             top: 5px;
-            fill: ${theme.color.neutral.white};
+            fill: ${theme.text.color.primary_variant};
             stroke-width: 40;
-            stroke: ${theme.color.neutral.white};
+            stroke: ${theme.text.color.primary_variant};
             animation-duration: ${theme.time.duration.long};
             animation-name: buttonIconMove;
             animation-iteration-count: infinite;

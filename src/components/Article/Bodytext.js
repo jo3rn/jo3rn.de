@@ -12,6 +12,7 @@ const Bodytext = props => {
         .bodytext {
           animation-name: bodytextEntry;
           animation-duration: ${theme.time.duration.long};
+          color: ${theme.text.color.on.background};
 
           :global(h2),
           :global(h3) {
@@ -44,7 +45,7 @@ const Bodytext = props => {
           }
           :global(a) {
             font-weight: ${theme.font.weight.bold};
-            color: ${theme.color.brand.primary};
+            color: ${theme.text.color.link};
             text-decoration: underline;
           }
           :global(a.gatsby-resp-image-link) {
@@ -56,7 +57,7 @@ const Bodytext = props => {
             border: 1px solid ${theme.line.color};
           }
           :global(code.language-text) {
-            background: ${theme.color.neutral.gray.c};
+            background: ${theme.background.color};
             text-shadow: none;
             color: inherit;
             padding: 0.1em 0.3em 0.2em;

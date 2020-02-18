@@ -30,7 +30,7 @@ class Header extends React.Component {
   };
 
   render() {
-    const { pages, path, theme } = this.props;
+    const { pages, path, theme, toggleTheme } = this.props;
     const { fixed } = this.state;
 
     return (
@@ -38,7 +38,10 @@ class Header extends React.Component {
         <header className={`header ${this.getHeaderSize()}`}>
           <Link to="/" className="logoType">
             <div className="logo">
-              <img src={config.gravatarImgMd5=="" ? avatar : config.gravatarImgMd5 } alt={config.siteTitle} />
+              <img
+                src={config.gravatarImgMd5 == "" ? avatar : config.gravatarImgMd5}
+                alt={config.siteTitle}
+              />
             </div>
             <div className="type">
               <h1>{config.headerTitle}</h1>
@@ -56,6 +59,7 @@ class Header extends React.Component {
                     fontLoaded={loaded}
                     pages={pages}
                     theme={theme}
+                    toggleTheme={toggleTheme}
                   />
                 )}
               </ScreenWidthContext.Consumer>
@@ -71,7 +75,7 @@ class Header extends React.Component {
           .header {
             align-items: center;
             justify-content: center;
-            background-color: ${theme.color.neutral.white};
+            background-color: ${theme.surface.color};
             display: flex;
             height: ${theme.header.height.default};
             position: relative;
@@ -83,7 +87,7 @@ class Header extends React.Component {
               align-items: center;
               display: flex;
               flex-direction: "column";
-              color: ${theme.text.color.primary};
+              color: ${theme.text.color.on.surface};
 
               .logo {
                 flex-shrink: 0;
@@ -159,10 +163,10 @@ class Header extends React.Component {
 
               :global(a.logoType),
               h1 {
-                color: ${theme.color.neutral.white};
+                color: ${theme.color.white};
               }
               h2 {
-                color: ${theme.color.neutral.gray.d};
+                color: ${theme.color.secondary};
               }
             }
           }
@@ -170,7 +174,7 @@ class Header extends React.Component {
           @from-width desktop {
             .header {
               align-items: center;
-              background-color: ${theme.color.neutral.white};
+              background-color: ${theme.surface.color};
               display: flex;
               position: absolute;
               top: 0;
@@ -180,7 +184,7 @@ class Header extends React.Component {
 
               &.fixed {
                 height: ${theme.header.height.fixed};
-                background-color: ${theme.color.neutral.white};
+                background-color: ${theme.surface.color};
                 left: 0;
                 padding: 0 ${theme.space.m};
                 position: fixed;
@@ -200,10 +204,10 @@ class Header extends React.Component {
               &.homepage:not(.fixed) {
                 :global(a.logoType),
                 h1 {
-                  color: ${theme.color.neutral.white};
+                  color: ${theme.color.white};
                 }
                 h2 {
-                  color: ${theme.color.neutral.gray.d};
+                  color: ${theme.color.secondary};
                 }
               }
             }
@@ -251,7 +255,8 @@ class Header extends React.Component {
 Header.propTypes = {
   pages: PropTypes.array.isRequired,
   path: PropTypes.string.isRequired,
-  theme: PropTypes.object.isRequired
+  theme: PropTypes.object.isRequired,
+  toggleTheme: PropTypes.func.isRequired
 };
 
 export default Header;

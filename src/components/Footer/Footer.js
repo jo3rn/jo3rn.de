@@ -11,7 +11,7 @@ const Footer = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .footer {
-          background: ${theme.color.neutral.white};
+          background: ${theme.surface.color};
           padding: ${theme.space.inset.default};
           padding-top: 0;
           padding-bottom: 120px;
@@ -22,7 +22,7 @@ const Footer = props => {
             padding: 0;
 
             :global(li) {
-              color: ${theme.color.neutral.gray.g};
+              color: ${theme.text.color.link};
               font-size: ${theme.font.size.xxs};
               padding: ${theme.space.xxs} ${theme.space.s};
               position: relative;

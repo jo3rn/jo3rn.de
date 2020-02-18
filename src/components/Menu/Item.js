@@ -46,18 +46,18 @@ const Item = props => {
         @from-width desktop {
           .item {
             :global(a) {
-              color: ${theme.text.color.primary};
+              color: ${theme.text.color.on.surface};
               padding: ${theme.space.inset.s};
               transition: all ${theme.time.duration.default};
               border-radius: ${theme.size.radius.small};
             }
 
             :global(.homepage):not(.fixed) & :global(a) {
-              color: ${theme.color.neutral.white};
+              color: ${theme.text.color.on.primary_variant};
             }
 
             :global(a:hover) {
-              color: ${theme.color.brand.primary};
+              color: ${theme.text.color.primary_variant};
               background: color(white alpha(-60%));
             }
 
@@ -66,7 +66,7 @@ const Item = props => {
             }
 
             &:hover :global(svg) {
-              fill: ${theme.color.brand.primary};
+              fill: ${theme.text.color.primary_variant};
               opacity: 1;
 
               :global(.hero) & :global(svg) {
@@ -84,9 +84,9 @@ const Item = props => {
             padding: ${theme.space.xs};
 
             & :global(a.inHiddenItem) {
-              color: ${theme.text.color.primary};
+              color: ${theme.text.color.on.surface};
               &:hover {
-                color: ${theme.color.brand.primary};
+                color: ${theme.text.color.primary};
               }
             }
           }

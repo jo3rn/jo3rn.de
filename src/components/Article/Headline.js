@@ -11,6 +11,7 @@ const Headline = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         h1 {
+          color: ${theme.text.color.on.background};
           font-size: ${theme.font.size.xxl};
           margin: ${theme.space.stack.l};
           animation-name: headlineEntry;
@@ -26,7 +27,7 @@ const Headline = props => {
 
           :global(svg) {
             height: 0.75em;
-            fill: ${theme.color.brand.primary};
+            fill: ${theme.color.primary.v200};
           }
         }
 
