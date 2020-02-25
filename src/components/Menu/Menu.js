@@ -74,7 +74,7 @@ class Menu extends React.Component {
   };
 
   hideOverflowedMenuItems = () => {
-    const PADDING_AND_SPACE_FOR_MORELINK = this.props.screenWidth >= 1024 ? 60 : 0;
+    const PADDING_AND_SPACE_FOR_MORELINK = this.props.screenWidth >= 1024 ? 60 : 6;
 
     const itemsContainer = this.itemList.current;
     const maxWidth = itemsContainer.offsetWidth - PADDING_AND_SPACE_FOR_MORELINK;
@@ -206,7 +206,6 @@ class Menu extends React.Component {
                 height: 1px;
                 background: ${theme.surface.color};
               }
-
 
               :global(.homepage):not(.fixed) & {
                 bottom: -100px;
