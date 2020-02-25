@@ -207,9 +207,6 @@ class Menu extends React.Component {
                 background: ${theme.surface.color};
               }
 
-              &.open {
-                padding: ${theme.space.inset.m};
-              }
 
               :global(.homepage):not(.fixed) & {
                 bottom: -100px;
