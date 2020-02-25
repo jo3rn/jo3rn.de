@@ -58,9 +58,10 @@ class Menu extends React.Component {
       this.props.path !== prevProps.path ||
       this.props.fixed !== prevProps.fixed ||
       this.props.screenWidth !== prevProps.screenWidth ||
-      this.props.fontLoaded !== prevProps.fontLoaded
+      this.props.fontLoaded !== prevProps.fontLoaded ||
+      this.props.theme !== prevProps.theme
     ) {
-      if (this.props.path !== prevProps.path) {
+      if (this.props.path !== prevProps.path || this.props.theme !== prevProps.theme) {
         this.closeMenu();
       }
       this.hideOverflowedMenuItems();
