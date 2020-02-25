@@ -2,8 +2,9 @@
 title: footnote
 ---
 
-* diese seite forkt: [gatsby-starter](https://github.com/greglobinski/gatsby-starter-hero-blog) von [greg lobinski](https://www.greglobinski.com)
+* erstellt mit [gatsby](https://www.gatsbyjs.org/)
+* inspiriert von [greg lobinski](https://www.greglobinski.com)
 * gehostet auf [netlify](https://www.netlify.com/)
-* fotos von [unsplash.com](https://unsplash.com) und [pixabay.com](https://pixabay.com)
-* [Unterstütze diese Seite](https://jo3rn.de/support)
-* [Disclaimer](https://jo3rn.de/amazon-disclaimer)
+* fotos von [unsplash.com](https://unsplash.com)
+* [unterstütze diese seite](https://jo3rn.de/support)
+* [disclaimer](https://jo3rn.de/amazon-disclaimer)

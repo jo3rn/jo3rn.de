@@ -22,7 +22,7 @@ const Footer = props => {
             padding: 0;
 
             :global(li) {
-              color: ${theme.text.color.link};
+              color: ${theme.text.color.on.surface};
               font-size: ${theme.font.size.xxs};
               padding: ${theme.space.xxs} ${theme.space.s};
               position: relative;
@@ -36,6 +36,11 @@ const Footer = props => {
               &:last-child::after {
                 content: "";
               }
+            }
+
+            :global(a) {
+              font-weight: ${theme.font.weight.bold};
+              color: ${theme.text.color.link};
             }
           }
         }
