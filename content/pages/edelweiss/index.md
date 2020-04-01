@@ -13,7 +13,7 @@ title: SSV Edelweiß
 | 5               | Nico ~            | 3421    | 855            | 65.06%       |
 | 6               | Jö !~§            | 3032    | 758            | 44.49%       |
 | 7               | Marv §~           | 2363    | 787            | 43.68%       |
-| 8               | Manu P ~          | 2915    | 728            | 43.53%       |
+| 8               | Manu P ~X         | 2915    | 728            | 43.53%       |
 | 9               | Flo               | 2243    | 704            | 43.16%       |
 | 10              | Lukas §~~         | 2817    | 931            | 42.05%       |
 | 11              | Konstantin        | 1538    | 769            | 41.54%       |
@@ -25,12 +25,14 @@ title: SSV Edelweiß
 
 <br/>
 
-### Legende
-\* Meisterschale    
-§ Manager-Lehrling    
-~ Mit-Austragender Abschlussfest    
-! Rote Laterne
-
+| Legende|                                   |
+| ----- | --------------------------------- |
+| \*    | Meisterschale                     |
+| §     | Manager-Lehrling                  |
+| ~     | Mit-Austragender Abschlussfest    |
+| !     | Rote Laterne                      |
+| X     | Storno-König                      |
+<br/>
 Der Sieger-Index gibt an, wieviele Mananger der jeweilige Manager im Schnitt prozentual hinter sich lässt. Er ist somit der invertierte Verlierer-Index.
 
 ### Hymne
