@@ -47,8 +47,8 @@ Ansonsten ist dieser RFC ein Versuch, möglichst viele Netzwerk-Begriffe (bridge
 
 Um sich der drohenden Knappheit von [IPv4](https://de.wikipedia.org/wiki/IPv4)-Adressen entgegenzustellen, beschreibt dieser RFC wie das Brieftaubennetz mit [IPv6](https://de.wikipedia.org/wiki/IPv6) zu nutzen ist. Des Weiteren setzt er das Feuerwerk abstruser Netzwerk-Tauben-Kalauer fort, sodass man hofft, das dies der letzte Teil der *Avian Carrier* Reihe bleiben wird.
 
-## Und in diesem Jahr
+## Und in diesem Jahr?
 
-In 2020 wurde folgender April-RFC veröffentlicht: 
+In 2020 erschien der April-RFC [The Quantum Bug](https://tools.ietf.org/html/rfc8774). Zufällig beschäftigt er sich auch mit Netzwerken und zwar was passiert, wenn die [Round Trip Time](https://de.wikipedia.org/wiki/Paketumlaufzeit) (die Zeit zwischen Aussenden und Empfangen eines Datenpakets) durch die Nutzung von [Quantennetzwerken](https://de.wikipedia.org/wiki/Quantennetzwerk) auf 0 sinkt. Protokolle mit Mechanismen, die von einer RTT > 0 ausgehen, würden nicht mehr einwandfrei funktionieren. Ein "Internet meltdown", wie er beim [Millenium-Bug](https://de.wikipedia.org/wiki/Jahr-2000-Problem) bevorstand, wäre die Folge.
 
 ###### Cover photo by <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@nate_dumlao?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Nathan Dumlao"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Nathan Dumlao</span></a>
