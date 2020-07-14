@@ -6,22 +6,25 @@ title: SSV Edelweiß
 
 | Position        | Manager           | Punkte  | Durchschnitt   | Sieger-Index |
 | --------------- |-------------------|:-------:|:--------------:|:------------:|
-| 1               | Julian *          | 4178    | 1044           | 88.08%       |
-| 2               | Daniel **         | 3834    | 958            | 81.67%       |
-| 3               | Bassmann *        | 2793    | 931            | 73.08%       |
-| 4               | Maxi              | 1706    | 853            | 70.26%       |
-| 5               | Nico ~            | 3421    | 855            | 65.06%       |
-| 6               | Jö !~§            | 3032    | 758            | 44.49%       |
-| 7               | Marv §~           | 2363    | 787            | 43.68%       |
-| 8               | Manu P ~X         | 2915    | 728            | 43.53%       |
-| 9               | Flo               | 2243    | 704            | 43.16%       |
-| 10              | Lukas §~~         | 2817    | 931            | 42.05%       |
-| 11              | Konstantin        | 1538    | 769            | 41.54%       |
-| 12              | Andi Wess         | 2165    | 721            | 35.04%       |
-| 13              | Jannik !~         | 2635    | 658            | 26.35%       |
-| 14              | Oliver Müller ~   | 789     | 789            | 20.00%       |
-| 15              | Lucas ~           | 708     | 708            | 06.67%       |
-| 16              | Louis !!          | 839     | 419            | 00.00%       |
+| 1               | Julian *          | 5301    | 1060           | 89.29%       |
+| 2               | Andi Stey §       | 1067    | 1067           | 88.24%       |
+| 3               | Daniel ***        | 5033    | 1007           | 85.33%       |
+| 4               | Kevin Vor         | 936     | 936            | 76.47%       |
+| 5               | Bassmann *        | 3735    | 934            | 75.40%       |
+| 6               | Nico ~            | 4270    | 854            | 63.82%       |
+| 7               | Maxi ~            | 2418    | 806            | 52.72%       |
+| 8               | Flo               | 3102    | 776            | 50.02%       |
+| 9               | Konstantin        | 2347    | 782            | 43.38%       |
+| 10              | Marv §~           | 3169    | 792            | 43.05%       |
+| 11              | Oliver Müller ~   | 1642    | 823            | 42.35%       |
+| 12              | Lukas §~~         | 3612    | 722            | 40.70%       |
+| 13              | Andi Wess         | 3014    | 754            | 39.52%       |
+| 14              | Manu P ~~         | 3614    | 723            | 37.17%       |
+| 15              | Jö !~§!           | 3557    | 711            | 35.59%       |
+| 16              | Jannik !~         | 3399    | 680            | 26.96%       |
+| 17              | Louis !!          | 1567    | 522            | 07.84%       |
+| 18              | Lucas ~~          | 1282    | 641            | 06.27%       |
+
 
 <br/>
 
@@ -31,7 +34,6 @@ title: SSV Edelweiß
 | §     | Manager-Lehrling                  |
 | ~     | Mit-Austragender Abschlussfest    |
 | !     | Rote Laterne                      |
-| X     | Storno-König                      |
 <br/>
 Der Sieger-Index gibt an, wieviele Mananger der jeweilige Manager im Schnitt prozentual hinter sich lässt. Er ist somit der invertierte Verlierer-Index.
 
