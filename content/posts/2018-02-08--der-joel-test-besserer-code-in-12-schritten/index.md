@@ -9,7 +9,7 @@ Einer meiner letzten Uni-Scheine war eine Gruppenarbeit. Wir sollten ein Softwar
 
 Der Test besteht aus 12 Indikatoren, wie gut ein „Software Team“ aufgestellt ist. Auf deutsch sehen die Fragen so aus:
 
-``` whitespace
+```text
 1. Benutzt ihr ein Versionierungssystem (source control)?
 2. Könnt ihr in einem Schritt einen Build-Prozess anstoßen?
 3. Macht ihr täglich Builds?
