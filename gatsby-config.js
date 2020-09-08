@@ -201,7 +201,8 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml"
+            output: "/rss.xml",
+            title: "RSS feed of jo3rn.de"
           }
         ]
       }
