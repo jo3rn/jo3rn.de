@@ -11,7 +11,7 @@ module.exports = {
   authorTwitterAccount: "jo3rnsen",
 
   /* info */
-  headerTitle: "jörn wieber",
+  headerTitle: "jörn auerbach",
   headerSubTitle: "utilize technology",
 
   /* manifest.json */

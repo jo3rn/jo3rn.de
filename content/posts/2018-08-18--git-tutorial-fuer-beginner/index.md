@@ -11,7 +11,7 @@ Allgemein gesprochen hat man einen Ordner (repository). Änderungen an dessen In
 
 Wie man Git auf seinen Rechner bekommt, wird auf der [offiziellen Webseite](https://git-scm.com/downloads) beschrieben. Nachdem Git installiert ist, steht der Befehl `git` in der Kommandozeile zur Verfügung. Dies kannst du mit dem Befehl `git --version` testen. Dieses Kommando liefert bei mir folgenden Output:
 
-``` shell
+```shell
 C:\Users\jo3rn> git --version
 git version 2.17.0.windows.1
 ```
@@ -23,7 +23,7 @@ Nun können wir mit unserem Beispiel-Projekt beginnen. Hierbei erstellen wir ein
 
 Wir legen einen Ordner mit dem Namen GitSite an, öffnen in ihm die Kommandozeile (z.B. PowerShell) und geben `git init` ein. Dadurch wird der Ordner zu einem Repository:
 
-``` shell
+```shell
 C:\Users\jo3rn\GitSite> git init
 Initialized empty Git repository in C:/Users/jo3rn/GitSite/.git/
 ```
@@ -31,7 +31,7 @@ Initialized empty Git repository in C:/Users/jo3rn/GitSite/.git/
 ### Möglichkeit 2
 Anstatt selbst ein Repository anzulegen, kann man auch ein vorhandenes klonen. Unser Beispiel-Projekt habe ich auf [GitHub](https://github.com/) veröffentlicht. Es gibt auch andere Anbieter wie [GitLab](https://about.gitlab.com/), die nicht erst seit der [Übernahme von GitHub durch Microsoft](https://www.heise.de/newsticker/meldung/Microsoft-kauft-GitHub-fuer-7-5-Milliarden-US-Dollar-4067633.html) auf den Plan getreten sind. Denn GitHub ist im Grunde nur ein Server, auf dem mein GitSite Ordner bereit liegt, sodass ihn jeder einsehen oder kopieren kann. Du kannst dir GitHub ein wenig wie Dropbox mit zusätzlichen Funktionen vorstellen. Anstatt mit `git init` ein eigenes Repository anzulegen, kannst du also auch ein vorhandenes kopieren. Der Ordner wird dann automatisch angelegt:
 
-``` shell
+```shell
 C:\Users\jo3rn> git clone https://github.com/jo3rn/GitSite.git
 Cloning into 'jo3rn'...
 ```
@@ -44,7 +44,7 @@ So weit, so gut. Wir haben also unser Repository. Allerdings ist es noch leer (a
 Für unsere Webseite benötigen wir ein paar Dateien, die ich schon vorbereitet habe. Du kannst sie hier direkt herunterladen (Rechtsklick -> …speichern unter…) und in deinen Ordner einfügen:
 
 index.html:
-``` html
+```html
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -63,7 +63,7 @@ index.html:
 ```
 
 [index.css](./index.css):
-``` css
+```css
 body {
     background-color: lightblue;
 }
@@ -75,7 +75,7 @@ h1 {
 ```
 
 [index.js](./index.js):
-``` javascript
+```javascript
 var specialText = document.getElementById("wisdom");
 
 specialText.onmouseover = function () {
@@ -91,7 +91,7 @@ Nun liegen sie in deinem **Working Directory**, zunächst komplett losgelöst vo
 
 Damit signalisierst du Git, dass die ausgewählten Dateien in die Versionsverwaltung aufgenommen werden können (aber es noch nicht sind!). Nach dem add befinden sie sich in einem Zwischenzustand: keine reine Arbeitsdatei auf deinem Rechner, aber auch noch keine an Git übergebene Version. In welchem Zustand sich welche Datei befindet, kannst du mit `git status` einsehen:
 
-``` shell
+```shell
 C:\Users\jo3rn\GitSite> git add *
 C:\Users\jo3rn\GitSite> git status
 On branch master
@@ -109,7 +109,7 @@ Aus der Ausgabe lesen wir, dass sich drei neue Dateien im Staging Bereich befind
 
 Es ist soweit. Wir haben die Dateien, die von Git getrackt werden sollen, in die Staging Zone gepackt. Nun manifestieren wir sie mit `git commit` für die Nachwelt (= ein Entwickler, der später auf den Code schaut, meistens man selbst):
 
-``` shell
+```shell
 C:\Users\jo3rn\GitSite> git commit -m "initial commit"
 [master (root-commit) 5c4453c] initial commit
 3 files changed, 31 insertions(+)
@@ -122,7 +122,7 @@ Mit dem `-m` nach dem commit-Befehl fügt man dem Commit eine Nachricht hinzu. D
 
 Nach dem `commit` fängt der Spaß bzw. die Git-Nutzung richtig an. Zum Beispiel können wir nun alle vorhandenen commits mit `git log` auflisten und nachverfolgen:
 
-``` shell
+```shell
 C:\Users\jo3rn\GitSite> git log
 commit 73bb66280889dedd4d4db4c4afe3d0880d82286b
 Author: jo3rn <jo3rn@users.noreply.github.com>
@@ -140,7 +140,7 @@ Ein Repository auf dem eigenen Rechner kann man bereits für eigene Projekte ver
 
 Das Repository auf unserem Rechner ist momentan [völlig losgelöst](https://www.youtube.com/watch?v=24r3LNXWi6o) von dem noch leeren Repository auf GitHub. Diese beiden Baustellen müssen zunächst mit dem Befehl `git remote add origin https://github.com/jo3rn/GitSite.git` verknüpft werden (nach origin musst du natürlich den Link zu deinem Repository angeben). Mit diesem Befehl wird die Repository-URL in dem Alias `origin` hinterlegt. Ob das geklappt hat kannst du mit `git remote` prüfen:
 
-``` shell
+```shell
 C:\Users\jo3rn\GitSite> git remote -v
 origin  https://github.com/jo3rn/GitSite.git (fetch)
 origin  https://github.com/jo3rn/GitSite.git (push)
@@ -152,7 +152,7 @@ Die Ausgabe sollte dann wie oben den Link zu deinem Repository anzeigen.
 
 In Schritt 4 wurde zunächst nur dem lokalen Repo gesagt, dass es ein bestimmtes anderes Repo gibt, womit es sich synchronisieren soll. Die Synchronisation selbst fand noch nicht statt. Um nun alle Dateien, die in Schritt 3 committed wurden, in das entfernte Repo zu bringen, benutzen wir den Befehl `git push`.
 
-``` shell
+```shell
 C:\Users\jo3rn\GitSite> git push origin master
 Counting objects: 8, done.
 Delta compression using up to 4 threads.

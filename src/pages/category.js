@@ -79,7 +79,6 @@ CategoryPage.propTypes = {
 
 export default CategoryPage;
 
-//eslint-disable-next-line no-undef
 export const query = graphql`
   query PostsQuery {
     posts: allMarkdownRemark(

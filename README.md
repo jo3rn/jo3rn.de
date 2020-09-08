@@ -1,43 +1,20 @@
-## Features:
-
-- Easy editable content in **Markdown** files (posts, pages and parts)
-- **CSS** with `styled-jsx` and `PostCSS`
-- **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
-- **Images** lazy loading and `webp` support (gatsby-image)
-- Post **categories** (category based post list)
-- **Contact** form (Netlify form handling)
-- Form elements and validation with `ant-design`
-- **RSS** feed
-- 100% **PWA** (manifest.webmanifest, offline support, favicons)
-- Google **Analytics**
-- App **favicons** generator (node script)
-- Easy customizable base **styles** via `theme` object generated from `yaml` file (fonts, colors, sizes)
-- React **v.16.3** (gatsby-plugin-react-next)
-- **Components** lazy loading (social sharing)
-- **ESLint** (google config)
-- **Prettier** code styling
-- Webpack `BundleAnalyzerPlugin`
-- **Gravatar** image (optional) instead local Avatar/Logo image
-
 ## Prerequisites
 
-If you do not have Gatsby Cli installed yet, do it first.
+If you do not have Gatsby installed yet, do it first.
 
 ```text
-npm install --global gatsby-cli
+npm install --global gatsby
 ```
-
-More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one)
 
 ## Getting started
 
-Install the starter using Gatsby Cli `gatsby new` command.
+Clone the repository.
 
 ```text
-gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-hero-blog.git
+git clone https://github.com/jo3rn/jo3rn.de.git
 ```
 
-Go into the newly created directory and run
+Go into the repository and run
 
 ```text
 gatsby develop
@@ -49,23 +26,42 @@ to hot-serve your website on http://localhost:8000 or
 gatsby build
 ```
 
-to create static site ready to host (/public).
+to create static site ready to host in `/public`.
 
-##### External services
+## Features:
 
-The starter uses external services for analytics. To use them you have to secure some access data. All services are free to use or have generous free tiers big enough for a personal blog.
-
-Create an `.env` file like below in the root folder. Change `...` placeholders with real data.
-<br />By default, your `.env` file will be ignored by git. Remove `.env` from `.gitignore` in order to be able to push the file to your repository.
-
-```text
-GOOGLE_ANALYTICS_ID=...
-```
+- Easy editable content in **Markdown** files (posts, pages and parts)
+- **CSS** with `styled-jsx` and `PostCSS`
+- **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
+- **Images** lazy loading and `webp` support (gatsby-image)
+- Post **categories** (category based post list)
+- **Contact** form (Netlify form handling)
+- Form elements and validation with `ant-design`
+- **RSS** feed
+- 100% **PWA** (manifest.webmanifest, offline support, favicons)
+- App **favicons** generator (node script)
+- Easy customizable base **styles** via `theme` object generated from `yaml` file (fonts, colors, sizes)
+- **ESLint** (google config)
+- **Prettier** code styling
+- Webpack `BundleAnalyzerPlugin`
+- **Gravatar** image (optional) instead local Avatar/Logo image
 
 ### Instructions & tutorials
 
-- [How to install, setup and add new content to a Blog starter](https://dev.greglobinski.com/install-blog-starter/)
-- More articles at [Front-end web development with Greg](https://dev.greglobinski.com/)
+Save blog posts with the naming pattern `/YYYY-MM-DD--title-of-post/` here:
+```text
+root
+  ├── content
+  │   ├── posts
+```
+
+Save pages here:
+```text
+root
+  ├── content
+  │   ├── pages
+```
+Naming pattern for pages that shall appear in the menu: `/XX--title/` (where XX is a number)
 
 ## Windows users
 
@@ -73,9 +69,9 @@ You should take a look at this: [Gatsby on Windows](https://www.gatsbyjs.org/doc
 
 ## Authors
 
-- Greg Lobinski [@greglobinski](https://github.com/greglobinski)
+- Jörn Auerbach [@jo3rn](https://github.com/jo3rn)
 
-See also the list of [contributors](https://github.com/greglobinski/gatsby-starter-personal-blog/graphs/contributors) who participated in this project.
+This is a mix of the gatsby starters [hero blog](https://github.com/greglobinski/gatsby-starter-hero-blog) and [startbootstrap-agency](https://github.com/thundermiracle/gatsby-startbootstrap-agency). See also the list of [contributors](https://github.com/jo3rn/jo3rn.de/graphs/contributors) who participated in this project.
 
 ## Contributing
 
@@ -88,8 +84,6 @@ See also the list of [contributors](https://github.com/greglobinski/gatsby-start
 ## Licence
 
 MIT License
-
-Copyright (c) 2017 gatsbyjs <br />Copyright (c) 2018 greg lobinski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

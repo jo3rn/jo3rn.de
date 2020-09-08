@@ -16,8 +16,8 @@ public void myMethod(string myParam) { }
 Das **Argument** ist das, was beim Aufruf der Methode an den Parameter übergeben wird:
 
 ```java
-string myArg1 = "this is my argument";
-myClass.myMethod(myArg1);
+String myArgument = "this is my argument";
+myClass.myMethod(myArgument);
 ```
 
 Merke: Eine Methode hat Parameter und nimmt Argumente.

@@ -25,7 +25,7 @@ Funktionen sind die Bausteine eines Programms. Dabei verhält es sich wie mit ph
 Nehmen wir an, wir entwickeln ein Programm, das einen Roboter zum Einkaufen schickt. Wie können wir den Ausgang dieses Informatiker-Witzes und sonstige unerwünschte Effekte verhindern?
 
 Dass die Funktion möglichst sinnvoll benannt werden sollte, habe wir schon im vorherigen Kapitel gelernt. Nun schauen wir uns als nächstes die **Argumente** der Funktion an. Die folgende Implementierung hat einige Schwächen:
-``` java
+```javascript
 function buy(item1, item2, item3) {
     ...
     searchShopFor(item1)
@@ -37,7 +37,7 @@ function buy(item1, item2, item3) {
 >>> buy(banana, apple, toast)
 ```
 Wenn wir nun doch 4 oder nur 2 Artikel kaufen wollen, müssen wir diese Funktion abändern. Und was ist, wenn wir beim Schreiben des Programmms noch gar nicht wissen, wieviele Artikel gekauft werden sollen? Dann müssten wir für alle Möglichkeiten eine separate Funktion vorhalten. Wie kann diese Funktion robuster werden? Schauen wir uns eine andere Implementierung an:
-``` java
+```javascript
 function buy(items) {
     ...
     for item in items {
@@ -53,7 +53,7 @@ Robert C. Martins Kredo ist: Je weniger Argumente, desto besser. Allein schon de
 
 Eine andere Sache, die in Funktionen besser vermieden werden sollte sind Seiteneffekte (*side effects*). Also sollte sie nicht den Status außerhalb ihres eigenen Zustands verändern:
 
-``` java
+```javascript
 function buy(items) {
     goToBank()
     withdrawCash()
