@@ -1,4 +1,3 @@
-//const webpack = require("webpack");
 const _ = require("lodash");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const path = require("path");
@@ -31,6 +30,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: `source`,
       value: source
+    });
+
+    const fileName = path.basename(node.fileAbsolutePath, ".md")
+    createNodeField({
+      node,
+      name: "fileName",
+      value: fileName,
     });
   }
 };
