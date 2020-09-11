@@ -1,7 +1,8 @@
 {
   "name": "jo3rn.de",
+  "description": "Homepage of jo3rn IT Service (personal and business)",
   "version": "1.0.0",
-  "author": "Greg Lobinski <greglobinski@gmail.com>",
+  "author": "jo3rn",
   "license": "MIT",
   "dependencies": {
     "antd": "^3.7.0",
