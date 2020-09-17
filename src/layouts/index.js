@@ -12,6 +12,7 @@ export const ThemeContext = React.createContext(null);
 export const ScreenWidthContext = React.createContext(0);
 export const FontLoadedContext = React.createContext(false);
 
+import "../style/main.scss";
 import themeObjectFromYamlDark from "../theme/dark.yaml";
 import themeObjectFromYamlLight from "../theme/light.yaml";
 

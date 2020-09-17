@@ -1,4 +1,5 @@
 require("dotenv").config();
+const path = require("path");
 const config = require("./content/meta/config");
 
 module.exports = {
@@ -142,6 +143,13 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        data: `@import "core.scss";`,
+        includePaths: [path.resolve(__dirname, "src/style")],
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {

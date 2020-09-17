@@ -31,7 +31,7 @@ to create static site ready to host in `/public`.
 ## Features:
 
 - Easy editable content in **Markdown** files (posts, pages and parts)
-- **CSS** with `styled-jsx` and `PostCSS`
+- **CSS** with `styled-jsx`, `PostCSS` and `Sassy CSS`
 - **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
 - **Images** lazy loading and `webp` support (gatsby-image)
 - Post **categories** (category based post list)
