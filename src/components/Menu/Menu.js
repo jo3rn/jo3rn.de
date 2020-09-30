@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 require("core-js/fn/array/from");
+import { ThemeContext } from "../../layouts";
 
 import { FaHome } from "react-icons/fa/";
 import { FaEnvelope } from "react-icons/fa/";
@@ -10,7 +11,7 @@ import { FaRegMoon } from "react-icons/fa/";
 import Item from "./Item";
 import Expand from "./Expand";
 
-import themeObjectFromYamlLight from "../../theme/light.yaml";
+import { DIMENS } from "../../constants";
 
 class Menu extends React.Component {
   constructor(props) {
@@ -25,8 +26,9 @@ class Menu extends React.Component {
     }));
 
     this.items = [
-      { to: "/", label: "Home", icon: FaHome },
-      { to: "/category/", label: "Themen", icon: FaTag },
+      { to: "/", label: "Service", icon: FaHome },
+      { to: "/blog/", label: "Blog", icon: FaTag },
+      //{ to: "/category/", label: "Themen", icon: FaTag }, //TODO: reference category page somewhere else
       ...pages,
       { to: "/contact/", label: "Kontakt", icon: FaEnvelope }
     ];
@@ -45,7 +47,6 @@ class Menu extends React.Component {
     screenWidth: PropTypes.number.isRequired,
     fontLoaded: PropTypes.bool.isRequired,
     pages: PropTypes.array.isRequired,
-    theme: PropTypes.object.isRequired,
     toggleTheme: PropTypes.func.isRequired
   };
 
@@ -58,10 +59,9 @@ class Menu extends React.Component {
       this.props.path !== prevProps.path ||
       this.props.fixed !== prevProps.fixed ||
       this.props.screenWidth !== prevProps.screenWidth ||
-      this.props.fontLoaded !== prevProps.fontLoaded ||
-      this.props.theme !== prevProps.theme
+      this.props.fontLoaded !== prevProps.fontLoaded
     ) {
-      if (this.props.path !== prevProps.path || this.props.theme !== prevProps.theme) {
+      if (this.props.path !== prevProps.path) {
         this.closeMenu();
       }
       this.hideOverflowedMenuItems();
@@ -142,46 +142,55 @@ class Menu extends React.Component {
   };
 
   render() {
-    const { screenWidth, theme } = this.props;
+    const { screenWidth } = this.props;
     const { open } = this.state;
 
     return (
       <React.Fragment>
-        <nav className={`menu ${open ? "open" : ""}`} rel="js-menu">
-          <ul className="itemList" ref={this.itemList}>
-            {this.items.map(item => (
-              <Item item={item} key={item.label} icon={item.icon} theme={theme} />
-            ))}
-          </ul>
-          {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} theme={theme} />}
-          {open && screenWidth >= 1024 && (
-            <ul className="hiddenItemList">
-              {this.state.hiddenItems.map(item => (
-                <Item item={item} key={item.label} hiddenItem theme={theme} />
-              ))}
-            </ul>
+        <ThemeContext.Consumer>
+          {color => (
+            <nav className={`menu ${open ? "open" : ""}`} rel="js-menu">
+              <ul className="itemList" ref={this.itemList}>
+                {this.items.map(item => (
+                  <Item item={item} key={item.label} icon={item.icon} />
+                ))}
+              </ul>
+              {this.state.hiddenItems.length > 0 && <Expand onClick={this.toggleMenu} />}
+              {open && screenWidth >= 1024 && (
+                <ul className="hiddenItemList">
+                  {this.state.hiddenItems.map(item => (
+                    <Item item={item} key={item.label} hiddenItem />
+                  ))}
+                </ul>
+              )}
+              <span className="toggleTheme" onClick={this.props.toggleTheme}>
+                <FaRegMoon />
+                {color === "light" ? "ON" : "OFF"}
+              </span>
+            </nav>
           )}
-          <span className="toggleTheme" onClick={this.props.toggleTheme}>
-            <FaRegMoon />
-            {theme === themeObjectFromYamlLight ? "ON" : "OFF"}
-          </span>
-        </nav>
+        </ThemeContext.Consumer>
 
-        {/* --- STYLES --- */}
+
         <style jsx>{`
+
+          .fixed {
+            z-index: 3;
+          }
+          
           .menu {
             align-items: center;
-            background: ${theme.surface.color};
+            background: var(--color-background);
             bottom: 0;
             display: flex;
             flex-grow: 1;
             left: 0;
             max-height: ${open ? "1000px" : "50px"};
-            padding: 0 ${theme.space.inset.s};
+            padding: 0 ${DIMENS.space.s};
             position: fixed;
             width: 100%;
             z-index: 1;
-            transition: all ${theme.time.duration.default};
+            transition: all ${DIMENS.time.s};
           }
 
           .itemList {
@@ -190,7 +199,7 @@ class Menu extends React.Component {
             justify-content: center;
             list-style: none;
             margin: 0;
-            padding: 0; /* 0 ${theme.space.s}; */
+            padding: 0; /* 0 ${DIMENS.space.s}; */
             position: relative;
             width: 100%;
           }
@@ -200,11 +209,11 @@ class Menu extends React.Component {
               &::after {
                 position: absolute;
                 content: "";
-                left: ${theme.space.m};
-                right: ${theme.space.m};
+                left: ${DIMENS.space.m};
+                right: ${DIMENS.space.m};
                 top: 0;
                 height: 1px;
-                background: ${theme.surface.color};
+                background: var(--color-background);
               }
 
               :global(.homepage):not(.fixed) & {
@@ -233,29 +242,29 @@ class Menu extends React.Component {
               list-style: none;
               margin: 0;
               position: absolute;
-              background: ${theme.surface.color};
-              border: 1px solid ${theme.line.color.primary};
+              background: var(--color-background);
+              border: 1px solid var(--color-primary);
               top: 48px;
-              right: ${theme.space.s};
+              right: ${DIMENS.space.s};
               display: flex;
               flex-direction: column;
               justify-content: flex-start;
-              padding: ${theme.space.m};
-              border-radius: ${theme.size.radius.small};
+              padding: ${DIMENS.space.m};
+              border-radius: ${DIMENS.space.xs};
               border-top-right-radius: 0;
 
 
               &:after {
                 content: "";
-                background: ${theme.background.color};
+                background: var(--color-background);
                 z-index: 10;
                 top: -10px;
                 right: -1px;
                 width: 44px;
                 height: 10px;
                 position: absolute;
-                border-left: 1px solid ${theme.line.color};
-                border-right: 1px solid ${theme.line.color};
+                border-left: 1px solid var(--color-secondary);
+                border-right: 1px solid var(--color-secondary);
               }
 
               :global(.homepage):not(.fixed) & {
@@ -277,15 +286,15 @@ class Menu extends React.Component {
             }
           }
           .toggleTheme {
-            padding: ${theme.space.inset.s};
-            color: ${theme.text.color.on.surface};
+            padding: ${DIMENS.space.s};
+            color: var(--color-secondary_variant);
             cursor: pointer;
             white-space: nowrap;
 
             :hover {
-              color: ${theme.text.color.primary_variant};
+              color: var(--color-primary_variant);
             }
-          }
+          } 
         `}</style>
       </React.Fragment>
     );

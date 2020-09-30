@@ -9,6 +9,8 @@ import Menu from "../Menu";
 
 import avatar from "../../images/png/avatar.png";
 
+import { DIMENS } from "../../constants";
+
 class Header extends React.Component {
   state = {
     fixed: false
@@ -30,7 +32,7 @@ class Header extends React.Component {
   };
 
   render() {
-    const { pages, path, theme, toggleTheme } = this.props;
+    const { pages, path, toggleTheme } = this.props;
     const { fixed } = this.state;
 
     return (
@@ -58,7 +60,6 @@ class Header extends React.Component {
                     screenWidth={width}
                     fontLoaded={loaded}
                     pages={pages}
-                    theme={theme}
                     toggleTheme={toggleTheme}
                   />
                 )}
@@ -75,9 +76,9 @@ class Header extends React.Component {
           .header {
             align-items: center;
             justify-content: center;
-            background-color: ${theme.surface.color};
+            background-color: var(--color-background);
             display: flex;
-            height: ${theme.header.height.default};
+            height: ${DIMENS.height.header.default};
             position: relative;
             top: 0;
             width: 100%;
@@ -87,7 +88,7 @@ class Header extends React.Component {
               align-items: center;
               display: flex;
               flex-direction: "column";
-              color: ${theme.text.color.on.surface};
+              color: var(--color-text);
 
               .logo {
                 flex-shrink: 0;
@@ -97,19 +98,19 @@ class Header extends React.Component {
             &.homepage {
               position: absolute;
               background-color: transparent;
-              height: ${theme.header.height.homepage};
+              /*height: ${DIMENS.height.header.homepage};
             }
           }
 
           h1 {
-            font-size: ${theme.font.size.m};
-            font-weight: ${theme.font.weight.standard};
-            margin: ${theme.space.stack.xs};
+            font-size: ${DIMENS.font.size.m};
+            font-weight: ${DIMENS.font.weight.standard};
+            margin-bottom: ${DIMENS.space.xs};
           }
 
           h2 {
-            font-weight: ${theme.font.weight.standard};
-            font-size: ${theme.font.size.xxs};
+            font-weight: ${DIMENS.font.weight.standard};
+            font-size: ${DIMENS.font.size.xxs};
             letter-spacing: 0;
             margin: 0;
           }
@@ -119,7 +120,7 @@ class Header extends React.Component {
             border: 1px solid #eee;
             display: inline-block;
             height: 44px;
-            margin: ${theme.space.inline.default};
+            margin-right: ${DIMENS.space.m};
             overflow: hidden;
             width: 44px;
             transition: all 0.5s;
@@ -142,15 +143,15 @@ class Header extends React.Component {
             left: 0;
             right: 0;
             height: 1px;
-            top: ${path === "/" ? theme.header.height.homepage : theme.header.height.default};
+            top: ${path === "/" ? DIMENS.height.header.homepage : DIMENS.height.header.default};
           }
 
           @from-width tablet {
             .header {
-              padding: ${theme.space.inset.l};
+              padding: ${DIMENS.space.l};
 
               &.homepage {
-                height: ${theme.header.height.homepage};
+                height: ${DIMENS.height.header.homepage};
               }
             }
           }
@@ -163,10 +164,10 @@ class Header extends React.Component {
 
               :global(a.logoType),
               h1 {
-                color: ${theme.color.white};
+                color: var(--color-text_menu_landing);
               }
               h2 {
-                color: ${theme.color.secondary};
+                color: var(--color-secondary);
               }
             }
           }
@@ -174,7 +175,7 @@ class Header extends React.Component {
           @from-width desktop {
             .header {
               align-items: center;
-              background-color: ${theme.surface.color};
+              background-color: var(--color-background);
               display: flex;
               position: absolute;
               top: 0;
@@ -183,17 +184,17 @@ class Header extends React.Component {
               transition: padding 0.5s;
 
               &.fixed {
-                height: ${theme.header.height.fixed};
-                background-color: ${theme.surface.color};
+                height: ${DIMENS.height.header.fixed};
+                background-color: var(--color-background);
                 left: 0;
-                padding: 0 ${theme.space.m};
+                padding: 0 ${DIMENS.space.m};
                 position: fixed;
                 top: 0;
                 width: 100%;
                 z-index: 1;
 
                 h1 {
-                  margin: ${theme.space.stack.xxs};
+                  margin-bottom: ${DIMENS.space.xxs};
                 }
 
                 h2 {
@@ -204,10 +205,10 @@ class Header extends React.Component {
               &.homepage:not(.fixed) {
                 :global(a.logoType),
                 h1 {
-                  color: ${theme.color.white};
+                  color: var(--color-text_menu_landing);
                 }
                 h2 {
-                  color: ${theme.color.secondary};
+                  color: var(--color-secondary);
                 }
               }
             }
@@ -220,7 +221,7 @@ class Header extends React.Component {
             }
 
             .logo {
-              margin: ${theme.space.inline.default};
+              margin-right: ${DIMENS.space.m};
 
               .fixed & {
                 height: 36px;
@@ -233,7 +234,7 @@ class Header extends React.Component {
             }
 
             h2 {
-              animation-duration: ${theme.time.duration.default};
+              animation-duration: ${DIMENS.time.m};
               animation-name: h2Entry;
             }
 
@@ -255,7 +256,6 @@ class Header extends React.Component {
 Header.propTypes = {
   pages: PropTypes.array.isRequired,
   path: PropTypes.string.isRequired,
-  theme: PropTypes.object.isRequired,
   toggleTheme: PropTypes.func.isRequired
 };
 

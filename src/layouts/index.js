@@ -13,8 +13,9 @@ export const ScreenWidthContext = React.createContext(0);
 export const FontLoadedContext = React.createContext(false);
 
 import "../style/main.scss";
-import themeObjectFromYamlDark from "../theme/dark.yaml";
-import themeObjectFromYamlLight from "../theme/light.yaml";
+import GlobalStyles from "../components/GlobalStyles";
+import { COLORS, INITIAL_COLOR_MODE_CSS_PROP } from "../constants";
+import { setCssVariablesAccordingToColor } from "../utils/setCssVariablesAccordingToColor";
 
 class Layout extends React.Component {
   constructor() {
@@ -25,7 +26,7 @@ class Layout extends React.Component {
       font600loaded: false,
       screenWidth: 0,
       headerMinimized: false,
-      theme: themeObjectFromYamlLight
+      color: 'light',
     };
 
     if (typeof window !== `undefined`) {
@@ -42,11 +43,11 @@ class Layout extends React.Component {
     });
     if (typeof window !== "undefined") {
       window.addEventListener("resize", this.resizeThrottler, false);
-      const locallyStoredThemeMode = localStorage.getItem("theme");
-      const themeMode = JSON.parse(locallyStoredThemeMode)
-        ? JSON.parse(locallyStoredThemeMode)
+      const locallyStoredColorMode = localStorage.getItem("color-mode");
+      const colorMode = JSON.parse(locallyStoredColorMode)
+        ? JSON.parse(locallyStoredColorMode)
         : "dark";
-      this.setThemeMode(themeMode);
+      this.setColorMode(colorMode);
     }
   }
 
@@ -59,20 +60,16 @@ class Layout extends React.Component {
   };
 
   toggleTheme = () => {
-    this.setThemeMode(this.state.theme === themeObjectFromYamlLight ? "dark" : "light");
+    const root = window.document.documentElement;
+    const priorColorMode = root.style.getPropertyValue(INITIAL_COLOR_MODE_CSS_PROP)
+    this.setColorMode(priorColorMode === "dark" ? "light" : "dark");
   };
 
-  setThemeMode = mode => {
-    localStorage.setItem("theme", JSON.stringify(mode));
-    switch (mode) {
-      case "light":
-        this.setState({ theme: themeObjectFromYamlLight });
-        break;
-      case "dark":
-      default:
-        this.setState({ theme: themeObjectFromYamlDark });
-        break;
-    }
+  setColorMode = colorMode => {
+    localStorage.setItem("color-mode", JSON.stringify(colorMode));
+    this.setState({color: colorMode})
+    
+    setCssVariablesAccordingToColor(COLORS, colorMode);
   };
 
   loadFont = (name, family, weight) => {
@@ -127,18 +124,18 @@ class Layout extends React.Component {
           } = data;
 
           return (
-            <ThemeContext.Provider value={this.state.theme}>
+            <ThemeContext.Provider value={this.state.color}>
+              <GlobalStyles />
               <FontLoadedContext.Provider value={this.state.font400loaded}>
                 <ScreenWidthContext.Provider value={this.state.screenWidth}>
                   <React.Fragment>
                     <Header
                       path={this.props.location.pathname}
                       pages={pages}
-                      theme={this.state.theme}
                       toggleTheme={this.toggleTheme}
                     />
                     <main>{children}</main>
-                    <Footer html={footnoteHTML} theme={this.state.theme} />
+                    <Footer html={footnoteHTML} />
 
                     {/* --- STYLES --- */}
                     <style jsx>{`
@@ -158,7 +155,7 @@ class Layout extends React.Component {
                         padding: 0;
                       }
                       body {
-                        background: ${this.state.theme.background.color};
+                        background: var(--color-background);
                         font-family: ${this.state.font400loaded
                           ? "'Open Sans', sans-serif;"
                           : "Arial, sans-serif;"};

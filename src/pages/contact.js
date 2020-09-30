@@ -11,11 +11,11 @@ const ContactPage = props => {
     <React.Fragment>
       <ThemeContext.Consumer>
         {theme => (
-          <Article theme={theme}>
+          <Article>
             <header>
-              <Headline title="Kontakt" theme={theme} />
+              <Headline title="Kontakt" />
             </header>
-            <Contact theme={theme} />
+            <Contact />
           </Article>
         )}
       </ThemeContext.Consumer>

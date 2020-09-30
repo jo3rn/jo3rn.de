@@ -2,8 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
+import { DIMENS } from "../../constants";
+
 const Item = props => {
-  const { theme, item: { label, to, icon: Icon } = {}, onClick } = props;
+  const { item: { label, to, icon: Icon } = {}, onClick } = props;
 
   return (
     <React.Fragment>
@@ -23,18 +25,18 @@ const Item = props => {
         .item,
         .showItem {
           background: transparent;
-          transition: all ${theme.time.duration.default};
+          transition: all ${DIMENS.time.s};
           display: flex;
           align-items: center;
 
           :global(a) {
-            padding: ${theme.space.inset.s};
+            padding: ${DIMENS.space.s};
             display: flex;
             align-items: center;
           }
 
           :global(svg) {
-            margin: 0 ${theme.space.inset.xs} 0 0;
+            margin: 0 ${DIMENS.space.xs} 0 0;
             opacity: 0.3;
           }
         }
@@ -46,27 +48,27 @@ const Item = props => {
         @from-width desktop {
           .item {
             :global(a) {
-              color: ${theme.text.color.on.surface};
-              padding: ${theme.space.inset.s};
-              transition: all ${theme.time.duration.default};
-              border-radius: ${theme.size.radius.small};
+              color: var(--color-text);
+              padding: ${DIMENS.space.s};
+              transition: all ${DIMENS.time.s};
+              border-radius: ${DIMENS.space.xs};
             }
 
             :global(.homepage):not(.fixed) & :global(a) {
-              color: ${theme.text.color.on.primary_variant};
+              color: var(--color-text_menu_landing);
             }
 
             :global(a:hover) {
-              color: ${theme.text.color.primary_variant};
+              color: var(--color-primary_variant);
               background: color(white alpha(-60%));
             }
 
             :global(svg) {
-              transition: all ${theme.time.duration.default};
+              transition: all ${DIMENS.time.s};
             }
 
             &:hover :global(svg) {
-              fill: ${theme.text.color.primary_variant};
+              fill: var(--color-primary_variant);
               opacity: 1;
 
               :global(.hero) & :global(svg) {
@@ -81,12 +83,12 @@ const Item = props => {
 
           .hiddenItem {
             text-align: left;
-            padding: ${theme.space.xs};
+            padding: ${DIMENS.space.xs};
 
             & :global(a.inHiddenItem) {
-              color: ${theme.text.color.on.surface};
+              color: var(--color-text);
               &:hover {
-                color: ${theme.text.color.primary};
+                color: var(--color-primary);
               }
             }
           }
@@ -101,7 +103,6 @@ Item.propTypes = {
   hidden: PropTypes.bool,
   onClick: PropTypes.func,
   icon: PropTypes.func,
-  theme: PropTypes.object.isRequired
 };
 
 export default Item;

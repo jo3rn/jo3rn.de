@@ -42,16 +42,16 @@ const CategoryPage = props => {
     <React.Fragment>
       <ThemeContext.Consumer>
         {theme => (
-          <Article theme={theme}>
+          <Article>
             <header>
-              <Headline title="Beiträge nach Kategorie" theme={theme} />
+              <Headline title="Beiträge nach Kategorie" />
             </header>
             {categoryList.map(item => (
               <section key={item[0]}>
                 <h2>
                   <FaTag /> {item[0]}
                 </h2>
-                <List edges={item[1]} theme={theme} />
+                <List edges={item[1]} />
               </section>
             ))}
             {/* --- STYLES --- */}
@@ -61,7 +61,7 @@ const CategoryPage = props => {
               }
               h2 :global(svg) {
                 height: 0.8em;
-                fill: ${theme.text.color.primary};
+                fill: var(--color-primary);
               }
             `}</style>
           </Article>

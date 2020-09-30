@@ -4,8 +4,10 @@ import PropTypes from "prop-types";
 import config from "../../../content/meta/config";
 import avatar from "../../images/png/avatar.png";
 
+import { DIMENS } from "../../constants";
+
 const Author = props => {
-  const { note, theme } = props;
+  const { note } = props;
 
   return (
     <React.Fragment>
@@ -22,15 +24,15 @@ const Author = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .author {
-          margin: ${theme.space.l} 0;
-          padding: ${theme.space.l} 0;
-          border-top: 1px solid ${theme.line.color};
-          border-bottom: 1px solid ${theme.line.color};
+          margin: ${DIMENS.space.l} 0;
+          padding: ${DIMENS.space.l} 0;
+          border-top: 1px solid var(--color-secondary);
+          border-bottom: 1px solid var(--color-secondary);
         }
         .avatar {
           float: left;
           border-radius: 65% 75%;
-          border: 1px solid ${theme.line.color};
+          border: 1px solid var(--color-secondary);
           display: inline-block;
           height: 50px;
           margin: 5px 20px 0 0;
@@ -59,7 +61,6 @@ const Author = props => {
 
 Author.propTypes = {
   note: PropTypes.string.isRequired,
-  theme: PropTypes.object.isRequired
 };
 
 export default Author;

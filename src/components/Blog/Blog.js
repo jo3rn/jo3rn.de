@@ -3,8 +3,10 @@ import React from "react";
 
 import Item from "./Item";
 
+import { DIMENS } from "../../constants";
+
 const Blog = props => {
-  const { posts, theme } = props;
+  const { posts } = props;
 
   return (
     <React.Fragment>
@@ -17,7 +19,7 @@ const Blog = props => {
                 fields: { slug }
               }
             } = post;
-            return <Item key={slug} post={node} theme={theme} />;
+            return <Item key={slug} post={node} />;
           })}
         </ul>
       </main>
@@ -25,26 +27,26 @@ const Blog = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .main {
-          padding: 0 ${theme.space.inset.default};
+          padding: 0 ${DIMENS.space.m};
         }
 
         ul {
           list-style: none;
           margin: 0 auto;
-          padding: ${`calc(${theme.space.default} * 1.5) 0 calc(${theme.space.default} * 0.5)`};
+          padding: ${`calc(${DIMENS.space.m} * 1.5) 0 calc(${DIMENS.space.m} * 0.5)`};
         }
 
         @above tablet {
           .main {
-            padding: 0 ${`0 calc(${theme.space.default} * 1.5)`};
+            padding: 0 ${`0 calc(${DIMENS.space.m} * 1.5)`};
           }
           ul {
-            max-width: ${theme.text.maxWidth.tablet};
+            max-width: ${DIMENS.tablet.maxWidth};
           }
         }
         @above desktop {
           ul {
-            max-width: ${theme.text.maxWidth.desktop};
+            max-width: ${DIMENS.desktop.maxWidth};
           }
         }
       `}</style>
@@ -54,7 +56,6 @@ const Blog = props => {
 
 Blog.propTypes = {
   posts: PropTypes.array.isRequired,
-  theme: PropTypes.object.isRequired
 };
 
 export default Blog;

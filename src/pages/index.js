@@ -2,9 +2,10 @@ import PropTypes from "prop-types";
 import React from "react";
 import { graphql } from "gatsby";
 import { ThemeContext } from "../layouts";
-import Blog from "../components/Blog";
 import Hero from "../components/Hero";
 import Seo from "../components/Seo";
+import fileNameToSectionName from "../utils/fileNameToSectionName";
+import * as Sections from "../views/Sections";
 
 class IndexPage extends React.Component {
   separator = React.createRef();
@@ -16,7 +17,7 @@ class IndexPage extends React.Component {
   render() {
     const {
       data: {
-        posts: { edges: posts = [] },
+        sections: { nodes: sections = [] },
         bgDesktop: {
           resize: { src: desktop }
         },
@@ -39,15 +40,25 @@ class IndexPage extends React.Component {
       <React.Fragment>
         <ThemeContext.Consumer>
           {theme => (
-            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
+            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} />
           )}
         </ThemeContext.Consumer>
 
         <hr ref={this.separator} />
 
-        <ThemeContext.Consumer>
-          {theme => <Blog posts={posts} theme={theme} />}
-        </ThemeContext.Consumer>
+        {// dynamically import sections
+        sections.map(({ frontmatter, fields: { fileName } }, ind) => {
+          const sectionComponentName = fileNameToSectionName(fileName);
+          const SectionComponent = Sections[sectionComponentName];
+
+          return SectionComponent ? (
+            <SectionComponent
+              key={sectionComponentName}
+              className={ind % 2 === 1 ? "bg-alternating" : null}
+              frontmatter={frontmatter}
+            />
+          ) : null;
+        })}
 
         <Seo />
 
@@ -68,34 +79,38 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-//eslint-disable-next-line no-undef
 export const query = graphql`
   query IndexQuery {
-    posts: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
-      sort: { fields: [fields___prefix], order: DESC }
+    sections: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//(parts)/" }, frontmatter: { anchor: { ne: null } } }
+      sort: { order: ASC, fields: fields___fileName }
     ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-            prefix
+      nodes {
+        frontmatter {
+          menuTitle
+          header
+          anchor
+          subheader
+          clients {
+            href
+            imageFileName
           }
-          frontmatter {
-            title
-            category
-            author
-            cover {
-              children {
-                ... on ImageSharp {
-                  fluid(maxWidth: 800, maxHeight: 360) {
-                    ...GatsbyImageSharpFluid_withWebp
-                  }
-                }
-              }
-            }
+          portfolios {
+            content
+            extraInfo
+            header
+            imageFileName
+            imageFileNameDetail
+            subheader
           }
+          services {
+            content
+            header
+            iconName
+          }
+        }
+        fields {
+          fileName
         }
       }
     }

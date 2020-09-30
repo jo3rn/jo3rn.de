@@ -21,8 +21,8 @@ const PostTemplate = props => {
     <React.Fragment>
       <ThemeContext.Consumer>
         {theme => (
-          <Article theme={theme}>
-            <Post post={post} next={next} prev={prev} authornote={authorNote} theme={theme} />
+          <Article>
+            <Post post={post} next={next} prev={prev} authornote={authorNote} />
           </Article>
         )}
       </ThemeContext.Consumer>

@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { DIMENS } from "../../constants";
+
 const Footer = props => {
-  const { html, theme } = props;
+  const { html } = props;
 
   return (
     <React.Fragment>
@@ -11,8 +13,8 @@ const Footer = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .footer {
-          background: ${theme.surface.color};
-          padding: ${theme.space.inset.default};
+          background: var(--color-background);
+          padding: ${DIMENS.space.m};
           padding-top: 0;
           padding-bottom: 120px;
 
@@ -22,16 +24,16 @@ const Footer = props => {
             padding: 0;
 
             :global(li) {
-              color: ${theme.text.color.on.surface};
-              font-size: ${theme.font.size.xxs};
-              padding: ${theme.space.xxs} ${theme.space.s};
+              color: var(--color-text);
+              font-size: ${DIMENS.font.size.xxs};
+              padding: ${DIMENS.space.xxs} ${DIMENS.space.s};
               position: relative;
               display: inline-block;
 
               &::after {
                 content: "•";
                 position: absolute;
-                right: ${`calc(${theme.space.xs} * -1)`};
+                right: ${`calc(${DIMENS.space.xs} * -1)`};
               }
               &:last-child::after {
                 content: "";
@@ -39,8 +41,8 @@ const Footer = props => {
             }
 
             :global(a) {
-              font-weight: ${theme.font.weight.bold};
-              color: ${theme.text.color.link};
+              font-weight: ${DIMENS.font.weight.bold};
+              color: var(--color-secondary_variant);
             }
           }
         }
@@ -57,7 +59,6 @@ const Footer = props => {
 
 Footer.propTypes = {
   html: PropTypes.string,
-  theme: PropTypes.object.isRequired
 };
 
 export default Footer;

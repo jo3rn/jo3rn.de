@@ -20,9 +20,9 @@ const CategoryTemplate = props => {
     <React.Fragment>
       <ThemeContext.Consumer>
         {theme => (
-          <Article theme={theme}>
+          <Article>
             <header>
-              <Headline theme={theme}>
+              <Headline>
                 <span>Beiträge zu diesem Thema</span> <FaTag />
                 {category}
               </Headline>
@@ -30,7 +30,7 @@ const CategoryTemplate = props => {
                 Es gibt <strong>{totalCount}</strong> {totalCount == 1 ? "Beitrag" : "Beiträge"} zu
                 diesem Thema.
               </p>
-              <List edges={edges} theme={theme} />
+              <List edges={edges} />
             </header>
           </Article>
         )}

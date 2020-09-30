@@ -5,9 +5,10 @@ import { Link } from "gatsby";
 import { FaArrowRight } from "react-icons/fa/";
 import { FaArrowLeft } from "react-icons/fa/";
 
+import { DIMENS } from "../../constants";
+
 const NextPrev = props => {
   const {
-    theme,
     next: {
       fields: { prefix: nextPrefix, slug: nextSlug } = {},
       frontmatter: { title: nextTitle } = {}
@@ -44,40 +45,40 @@ const NextPrev = props => {
         .links {
           display: flex;
           flex-direction: column;
-          padding: 0 ${theme.space.m} ${theme.space.l};
-          border-bottom: 1px solid ${theme.line.color};
-          margin: ${theme.space.stack.l};
+          padding: 0 ${DIMENS.space.m} ${DIMENS.space.l};
+          border-bottom: 1px solid var(--color-secondary);
+          margin-bottom: ${DIMENS.space.l};
 
           :global(a) {
             display: flex;
           }
 
           :global(a:nth-child(2)) {
-            margin: ${theme.space.default} 0 0;
+            margin: ${DIMENS.space.m} 0 0;
           }
 
           :global(svg) {
-            fill: ${theme.color.special.attention};
-            width: ${theme.space.m};
-            height: ${theme.space.m};
+            fill: var(--color-attention);
+            width: ${DIMENS.space.m};
+            height: ${DIMENS.space.m};
             flex-shrink: 0;
             flex-grow: 0;
-            margin: ${theme.space.inline.m};
+            margin-right: ${DIMENS.space.m};
           }
         }
 
         h4 {
-          color: ${theme.text.color.link};
+          color: var(--color-secondary_variant);
           font-weight: 600;
           margin: 0;
           font-size: 1.1em;
 
           :hover {
-            color: ${theme.text.color.primary_variant};
+            color: var(--color-primary_variant);
           }
         }
         time {
-          color: ${theme.text.color.primary};
+          color: var(--color-primary);
           display: block;
           font-weight: 400;
           font-size: 0.8em;
@@ -98,7 +99,7 @@ const NextPrev = props => {
             }
             :global(svg) {
               transition: all 0.5s;
-              margin: ${theme.space.inline.s};
+              margin-right: ${DIMENS.space.s};
             }
           }
 
@@ -116,7 +117,6 @@ const NextPrev = props => {
 NextPrev.propTypes = {
   next: PropTypes.object,
   prev: PropTypes.object,
-  theme: PropTypes.object.isRequired
 };
 
 export default NextPrev;

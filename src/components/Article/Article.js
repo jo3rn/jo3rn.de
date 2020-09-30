@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { DIMENS } from "../../constants";
+
 const Article = props => {
-  const { children, theme } = props;
+  const { children } = props;
 
   return (
     <React.Fragment>
@@ -11,20 +13,20 @@ const Article = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .article {
-          color: ${theme.text.color.on.background};
-          padding: ${theme.space.inset.default};
+          color: var(--color-text);
+          padding: ${DIMENS.space.m};
           margin: 0 auto;
         }
         @from-width tablet {
           .article {
-            padding: ${`calc(${theme.space.default}) calc(${theme.space.default} * 2)`};
-            max-width: ${theme.text.maxWidth.tablet};
+            padding: ${`calc(${DIMENS.space.m}) calc(${DIMENS.space.m} * 2)`};
+            max-width: ${DIMENS.tablet.maxWidth};
           }
         }
         @from-width desktop {
           .article {
-            padding: ${`calc(${theme.space.default} * 2 + 90px) 0 calc(${theme.space.default} * 2)`};
-            max-width: ${theme.text.maxWidth.desktop};
+            padding: ${`calc(${DIMENS.space.m} * 2 + 90px) 0 calc(${DIMENS.space.m} * 2)`};
+            max-width: ${DIMENS.desktop.maxWidth};
           }
         }
       `}</style>
@@ -34,7 +36,6 @@ const Article = props => {
 
 Article.propTypes = {
   children: PropTypes.node.isRequired,
-  theme: PropTypes.object.isRequired
 };
 
 export default Article;

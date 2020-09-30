@@ -2,8 +2,10 @@ import { FaAngleDown } from "react-icons/fa/";
 import PropTypes from "prop-types";
 import React from "react";
 
+import { DIMENS } from "../../constants";
+
 const Expand = props => {
-  const { onClick, theme } = props;
+  const { onClick } = props;
 
   return (
     <React.Fragment>
@@ -19,9 +21,9 @@ const Expand = props => {
 
         @below desktop {
           .more {
-            background: ${theme.surface.color};
-            border: 1px solid ${theme.text.color.on.secondary_variant};
-            border-radius: ${theme.size.radius.small} ${theme.size.radius.small} 0 0;
+            background: var(--color-background);
+            border: 1px solid var(--color-text);
+            border-radius: ${DIMENS.space.xs} ${DIMENS.space.xs} 0 0;
             border-bottom: none;
             position: absolute;
             left: 50%;
@@ -36,14 +38,14 @@ const Expand = props => {
               outline: none;
 
               :global(svg) {
-                fill: ${theme.text.color.primary};
+                fill: var(--color-primary);
               }
             }
 
             :global(svg) {
               transition: all 0.5s;
               transform: rotateZ(180deg);
-              fill: ${theme.color.special.attention};
+              fill: var(--color-attention);
             }
 
             :global(.open) & :global(svg) {
@@ -60,10 +62,10 @@ const Expand = props => {
             height: 38px;
             background: transparent;
             margin-left: 10px;
-            border-radius: ${theme.size.radius.small};
-            border: 1px solid ${theme.line.color};
+            border-radius: ${DIMENS.space.xs};
+            border: 1px solid var(--color-secondary);
             display: flex;
-            transition: background-color ${theme.time.duration.default};
+            transition: background-color ${DIMENS.time.s};
             justify-content: center;
             align-items: center;
             padding: 0;
@@ -75,7 +77,7 @@ const Expand = props => {
             }
 
             :global(svg) {
-              transition: all ${theme.time.duration.default};
+              transition: all ${DIMENS.time.s};
             }
 
             :global(.homepage) & {
@@ -102,7 +104,7 @@ const Expand = props => {
             }
 
             :global(.fixed) & {
-              border: 1px solid ${theme.line.color};
+              border: 1px solid var(--color-secondary);
               height: 30px;
             }
           }
@@ -114,7 +116,6 @@ const Expand = props => {
 
 Expand.propTypes = {
   onClick: PropTypes.func,
-  theme: PropTypes.object.isRequired
 };
 
 export default Expand;

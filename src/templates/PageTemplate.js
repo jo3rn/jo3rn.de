@@ -13,13 +13,9 @@ const PageTemplate = props => {
 
   return (
     <React.Fragment>
-      <ThemeContext.Consumer>
-        {theme => (
-          <Article theme={theme}>
-            <Page page={page} theme={theme} />
+          <Article>
+            <Page page={page} />
           </Article>
-        )}
-      </ThemeContext.Consumer>
 
       <Seo data={page} />
     </React.Fragment>

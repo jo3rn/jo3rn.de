@@ -132,15 +132,15 @@ const Contact = props => {
                 height: auto;
                 font-size: 1.2em;
                 padding: 0.5em 3em;
-                color: ${theme.text.color.on.surface};
-                background: ${theme.surface.color};
-                border: 1px solid ${theme.color.primary.v200};
+                color: var(--color-text);
+                background: var(--color-background);
+                border: 1px solid var(--color-primary);
               }
               .form :global(.ant-form-explain) {
                 margin-top: 0.2em;
               }
               .form :global(.ant-form-item-label > label) {
-                color: ${theme.text.color.on.surface};
+                color: var(--color-text);
               }
 
               @from-width desktop {
