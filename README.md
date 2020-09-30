@@ -1,7 +1,6 @@
 ## Prerequisites
 
-If you do not have Gatsby installed yet, do it first.
-
+If you do not have [Gatsby](https://www.gatsbyjs.org/) installed yet, do it first.
 ```text
 npm install --global gatsby
 ```
@@ -9,19 +8,16 @@ npm install --global gatsby
 ## Getting started
 
 Clone the repository.
-
 ```text
 git clone https://github.com/jo3rn/jo3rn.de.git
 ```
 
 Go into the repository and run
-
 ```text
 gatsby develop
 ```
 
 to hot-serve your website on http://localhost:8000 or
-
 ```text
 gatsby build
 ```
@@ -35,7 +31,7 @@ to create static site ready to host in `/public`.
 - **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
 - **Images** lazy loading and `webp` support (gatsby-image)
 - Post **categories** (category based post list)
-- **Contact** form (Netlify form handling)
+- **Contact** form ([Netlify](https://www.netlify.com/) form handling)
 - Form elements and validation with `ant-design`
 - **RSS** feed
 - 100% **PWA** (manifest.webmanifest, offline support, favicons)
@@ -71,7 +67,7 @@ You should take a look at this: [Gatsby on Windows](https://www.gatsbyjs.org/doc
 
 - Jörn Auerbach [@jo3rn](https://github.com/jo3rn)
 
-This is a mix of the gatsby starters [hero blog](https://github.com/greglobinski/gatsby-starter-hero-blog) and [startbootstrap-agency](https://github.com/thundermiracle/gatsby-startbootstrap-agency). See also the list of [contributors](https://github.com/jo3rn/jo3rn.de/graphs/contributors) who participated in this project.
+This is a remix/extension of the gatsby starters [hero blog](https://github.com/greglobinski/gatsby-starter-hero-blog) and [startbootstrap-agency](https://github.com/thundermiracle/gatsby-startbootstrap-agency). See also the list of [contributors](https://github.com/jo3rn/jo3rn.de/graphs/contributors) who participated in this project.
 
 ## Contributing
 
