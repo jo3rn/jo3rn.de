@@ -98,7 +98,7 @@ class Header extends React.Component {
             &.homepage {
               position: absolute;
               background-color: transparent;
-              /*height: ${DIMENS.height.header.homepage};
+              height: ${DIMENS.height.header.homepage};
             }
           }
 
