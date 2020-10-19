@@ -4,7 +4,7 @@ menuTitle: Impressum
 ---
 
 ### Angaben gemäß § 5 TMG
-Jörn Wieber    
+Jörn Auerbach   
 Reinhardstr. 14    
 36103 Flieden    
 Kontakt:    
