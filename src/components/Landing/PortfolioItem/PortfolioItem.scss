@@ -42,7 +42,7 @@
       margin: 0 auto;
       padding: 25px;
       text-align: center;
-      background-color: $white;
+      background-color: var(--color-background);
       h4 {
         margin: 0;
         text-transform: none;
@@ -54,11 +54,24 @@
         @include serif-font;
       }
     }
-  }
+}
   
-  @media (min-width: 767px) {
-    .portfolio-item {
-      margin: 0 0 30px;
-    }
+@media (min-width: 767px) {
+  .portfolio-item {
+    margin: 0 0 30px;
   }
+}
+
+.portfolio-modal-header {
+  background-color: var(--color-background_alternating);
+}
+
+.portfolio-modal-body {
+  background-color: var(--color-background);
+  text-align: center;
+}
+
+.portfolio-modal-footer {
+  background-color: var(--color-background_alternating);
+}
   

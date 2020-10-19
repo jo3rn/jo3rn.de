@@ -12,7 +12,6 @@ const PortfolioDetailDialog = ({
   header,
   subheader,
   content,
-  extraInfo,
   ...restProps
 }) => {
   return (
@@ -23,24 +22,23 @@ const PortfolioDetailDialog = ({
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
+      <Modal.Header closeButton className="portfolio-modal-header">
         <Modal.Title id="contained-modal-title-vcenter">{header}</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="mx-auto">
-        <p className="item-intro text-muted">{subheader}</p>
+      <Modal.Body className="mx-auto portfolio-modal-body">
         <Image
           className="img-fluid d-block"
           fileName={imageFileName}
           alt={imageAlt || header || subheader}
         />
+        <p className="item-intro text-muted">{subheader}</p>
         <p>{content}</p>
-        {extraInfo}
       </Modal.Body>
-      <Modal.Footer>
+      <Modal.Footer className="portfolio-modal-footer">
         <div className="mx-auto">
           <Button variant="primary" onClick={onHide}>
             <Icon iconName="CloseIcon" />
-            &nbsp; Close Project
+            &nbsp; Schließen
           </Button>
         </div>
       </Modal.Footer>
@@ -55,7 +53,6 @@ PortfolioDetailDialog.propTypes = {
   header: PropTypes.string,
   subheader: PropTypes.string,
   content: PropTypes.string,
-  extraInfo: PropTypes.any,
 };
 
 PortfolioDetailDialog.defaultProps = {
@@ -65,7 +62,6 @@ PortfolioDetailDialog.defaultProps = {
   header: "",
   subheader: "",
   content: "",
-  extraInfo: null,
 };
 
 export default PortfolioDetailDialog;

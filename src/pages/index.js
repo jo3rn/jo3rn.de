@@ -97,7 +97,6 @@ export const query = graphql`
           }
           portfolios {
             content
-            extraInfo
             header
             imageFileName
             imageFileNameDetail
