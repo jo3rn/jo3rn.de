@@ -34,7 +34,7 @@ Die Brieftauben tragen einen Barcode der jeweiligen Klasse auf ihrem Flügel. We
 
 Ansonsten ist dieser RFC ein Versuch, möglichst viele Netzwerk-Begriffe (bridge, mirror, NAT,...) im Brieftaubenkontext zu verwursten. Tolle Tauben-[ASCII-Kunst](https://de.wikipedia.org/wiki/ASCII-Art) gibt es gratis obendrauf:
 
-```text
+```html
                  __
  _____/-----\   / o\    
 <____   _____\_/    >--    
