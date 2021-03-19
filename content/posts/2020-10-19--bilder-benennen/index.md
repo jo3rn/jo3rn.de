@@ -42,11 +42,11 @@ Nun sind wir bereits auf dem NAS. Da ich als Shell lieber die bash benutze, star
 jo3rn@DS418play: bash
 ```
 
-Gleich werden wir [ExifTool](https://exiftool.org/) benutzen, wofür wir vorher Perl installieren müssen, z.B. in der Web-Oberfläche über das Paket-Zentrum:
+Gleich werden wir [ExifTool](https://exiftool.org/) benötigen, wofür wir vorher Perl installieren müssen. Das geht z.B. in der Web-Oberfläche über das Paket-Zentrum:
 
 ![Screenshot des Perl-Eintrags im Synology Paket-Zentrum](./paketzentrum_perl.PNG)
 
-Ob das geklappt hat, können wir zurück im Terminal prüfen:
+Ob uns Perl jetzt zur Verfügung steht, können wir zurück im Terminal prüfen:
 ```shell
 bash-4.3$ perl -v
 This is perl 5, version 24, subversion 0 (v5.24.0) built for x86_64-linux
@@ -65,7 +65,7 @@ bash-4.3$ wget https://exiftool.org/Image-ExifTool-12.08.tar.gz
 bash-4.3$ gzip -dc Image-ExifTool-12.08.tar.gz | tar -xf -
 ```
 
-ExifTool lässt sich dann aufrufen über den Installationspfad. In meinem Fall das residiert das ExifTool-Verzeichnis im Home-Verzeichnis:
+ExifTool lässt sich dann aufrufen über den Installationspfad. In meinem Fall residiert das ExifTool-Verzeichnis im Home-Verzeichnis:
 
 ```shell
 bash-4.3$ ~/Image-ExifTool-12.08/exiftool IMG_1748.JPG
