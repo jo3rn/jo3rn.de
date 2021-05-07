@@ -123,7 +123,6 @@ export const DIMENS = {
         header: {
             fixed: '50px',
             default: '80px',
-            homepage: '100px',
         },
     },
     tablet: {

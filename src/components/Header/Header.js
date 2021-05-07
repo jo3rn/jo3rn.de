@@ -98,7 +98,6 @@ class Header extends React.Component {
             &.homepage {
               position: absolute;
               background-color: transparent;
-              height: ${DIMENS.height.header.homepage};
             }
           }
 
@@ -143,7 +142,7 @@ class Header extends React.Component {
             left: 0;
             right: 0;
             height: 1px;
-            top: ${path === "/" ? DIMENS.height.header.homepage : DIMENS.height.header.default};
+            top: ${DIMENS.height.header.default};
           }
 
           @from-width tablet {
@@ -151,7 +150,7 @@ class Header extends React.Component {
               padding: ${DIMENS.space.l};
 
               &.homepage {
-                height: ${DIMENS.height.header.homepage};
+                height: ${DIMENS.height.header.default};
               }
             }
           }
