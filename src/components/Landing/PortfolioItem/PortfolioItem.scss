@@ -55,6 +55,10 @@
       }
     }
 }
+
+button.close {
+  color: var(--color-text);
+}
   
 @media (min-width: 767px) {
   .portfolio-item {
