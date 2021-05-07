@@ -12,6 +12,8 @@ const PortfolioDetailDialog = ({
   header,
   subheader,
   content,
+  link,
+  linkTitle,
   ...restProps
 }) => {
   return (
@@ -33,6 +35,7 @@ const PortfolioDetailDialog = ({
         />
         <p className="item-intro text-muted">{subheader}</p>
         <p>{content}</p>
+        {link == "" ? "" : <a href={link}>{"->"} {linkTitle}</a>}
       </Modal.Body>
       <Modal.Footer className="portfolio-modal-footer">
         <div className="mx-auto">
@@ -53,6 +56,8 @@ PortfolioDetailDialog.propTypes = {
   header: PropTypes.string,
   subheader: PropTypes.string,
   content: PropTypes.string,
+  link: PropTypes.string,
+  linkTitle: PropTypes.string,
 };
 
 PortfolioDetailDialog.defaultProps = {
@@ -62,6 +67,8 @@ PortfolioDetailDialog.defaultProps = {
   header: "",
   subheader: "",
   content: "",
+  link: "",
+  linkTitle: "",
 };
 
 export default PortfolioDetailDialog;

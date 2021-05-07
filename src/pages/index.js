@@ -101,6 +101,8 @@ export const query = graphql`
             imageFileName
             imageFileNameDetail
             subheader
+            link
+            linkTitle
           }
           services {
             content

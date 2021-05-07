@@ -21,13 +21,15 @@ const Portfolio = ({ className, frontmatter }) => {
       </Row>
       <Row>
         {portfolios.map(
-          ({ content, header, imageFileName, imageFileNameDetail, subheader }) => (
+          ({ content, header, imageFileName, imageFileNameDetail, subheader, link, linkTitle }) => (
             <PortfolioItem
               key={header}
               imageFileName={imageFileName}
               header={header}
               subheader={subheader}
               content={content}
+              link={link}
+              linkTitle={linkTitle}
               imageFileNameDetail={imageFileNameDetail}
             />
           ),

@@ -1,7 +1,7 @@
 ---
 anchor: "Portfolio"
 header: "Portfolio"
-subheader: "abgeschlossene Projekte"
+subheader: "abgeschlossene Projekte - für Details auf den Thumbnail klicken"
 portfolios: [
   {
     imageFileName: "portfolio/nudging_1.png",
@@ -9,6 +9,8 @@ portfolios: [
     header: "Nudging Experiment",
     subheader: "oTree",
     content: "Zweistufiges Experiment: Präferenzmessung durch Abfrage von Zahlungsbereitschaft. Präsentation verschiedener Güter (Bilder) mit dem Versuch den Teilnehmer zu einer Entscheidung entgegen seiner Präferenz zu bewegen.",
+    link: "https://github.com/jo3rn/oTree_FFM",
+    linkTitle: "GitHub Repository",
   },
   {
     imageFileName: "portfolio/publicgood.png",
@@ -16,6 +18,8 @@ portfolios: [
     header: "Public Goods Experiment",
     subheader: "oTree",
     content: "Öffentliches-Güter Spiel mit bis zu 4 Teilnehmern im Netzwerk und verschiedenen Modi. Audiovisuelle Anweisungen und Rückmeldungen. Tracking von Entscheidungen und Ergebnissen.",
+    link: "https://github.com/jo3rn/KidsCOOP",
+    linkTitle: "GitHub Repository"
   },
   {
     imageFileName: "portfolio/devilstask.png",
@@ -23,6 +27,8 @@ portfolios: [
     header: "Devil's Task & Competition Experiment",
     subheader: "oTree",
     content: "Web Applikation zum Spielen eines Glücks-/Risikospiels mit Zufallselement sowie einem Geschicklichkeitsspiel. Matching mit Gegenspielern im Netzwerk. Audiovisuelle Anweisungen und Rückmeldungen. Tracking von Entscheidungen und Ergebnissen.",
+    link: "https://github.com/jo3rn/oTree-apps",
+    linkTitle: "GitHub Repository",
   },
   {
     imageFileName: "portfolio/app.jpg",
@@ -30,6 +36,8 @@ portfolios: [
     header: "App",
     subheader: "Android",
     content: "Entwicklung einer App zur Anzeige und Buchung von Angeboten inkl. Zahlungsabwicklung über einen Dienstleister. Anschluss an ein Backend und Verwalten einer Datenbank auf dem Gerät. Kommunikation mit einem eingebetteten System über Bluetooth Low Energy. Zum Zeitpunkt der Übergabe 500+ aktive Geräte (1000+ Downloads) mit einer durschnittlichen Bewertung von 4.7 im Google Play Store.",
+    link: "",
+    linkTitle: "",
   },
 ]
 ---

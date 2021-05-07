@@ -14,6 +14,8 @@ const PortfolioItem = ({
   header,
   subheader,
   content,
+  link,
+  linkTitle,
   imageFileNameDetail,
   imageAltDetail,
 }) => {
@@ -59,6 +61,8 @@ const PortfolioItem = ({
         header={header}
         subheader={subheader}
         content={content}
+        link={link}
+        linkTitle={linkTitle}
       />
     </>
   );
@@ -70,6 +74,8 @@ PortfolioItem.propTypes = {
   header: PropTypes.string.isRequired,
   subheader: PropTypes.string,
   content: PropTypes.string,
+  link: PropTypes.string,
+  linkTitle: PropTypes.string,
   imageFileNameDetail: PropTypes.string,
   imageAltDetail: PropTypes.string,
 };
@@ -78,6 +84,8 @@ PortfolioItem.defaultProps = {
   imageAlt: "",
   subheader: "",
   content: "",
+  link: "",
+  linkTitle: "",
   imageFileNameDetail: "",
   imageAltDetail: "",
 };
