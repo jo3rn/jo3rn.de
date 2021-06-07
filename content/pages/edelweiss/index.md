@@ -2,42 +2,53 @@
 title: SSV Edelweiß
 ---
 
-### Ewige Tabelle
+## Ewige Tabelle
 
-| Position        | Manager           | Punkte  | Durchschnitt   | Sieger-Index |
-| --------------- |-------------------|:-------:|:--------------:|:------------:|
-| 1               | Julian *          | 5301    | 1060           | 89.29%       |
-| 2               | Andi Stey §       | 1067    | 1067           | 88.24%       |
-| 3               | Daniel ***        | 5033    | 1007           | 85.33%       |
-| 4               | Kevin Vor         | 936     | 936            | 76.47%       |
-| 5               | Bassmann *        | 3735    | 934            | 75.40%       |
-| 6               | Nico ~            | 4270    | 854            | 63.82%       |
-| 7               | Maxi ~            | 2418    | 806            | 52.72%       |
-| 8               | Flo               | 3102    | 776            | 50.02%       |
-| 9               | Konstantin        | 2347    | 782            | 43.38%       |
-| 10              | Marv §~           | 3169    | 792            | 43.05%       |
-| 11              | Oliver Müller ~   | 1642    | 823            | 42.35%       |
-| 12              | Lukas §~~         | 3612    | 722            | 40.70%       |
-| 13              | Andi Wess         | 3014    | 754            | 39.52%       |
-| 14              | Manu P ~~         | 3614    | 723            | 37.17%       |
-| 15              | Jö !~§!           | 3557    | 711            | 35.59%       |
-| 16              | Jannik !~         | 3399    | 680            | 26.96%       |
-| 17              | Louis !!          | 1567    | 522            | 07.84%       |
-| 18              | Lucas ~~          | 1282    | 641            | 06.27%       |
-
+| Position | Manager         | Punkte | Durchschnitt | Sieger-Index |
+| -------- | --------------- | :----: | :----------: | :----------: |
+| 1        | Daniel \*\*\*   |  5873  |     979      |    82.57%    |
+| 2        | Julian \*       |  5983  |     997      |    81.70%    |
+| 3        | Kevin Vor       |  1877  |     939      |    78.86%    |
+| 4        | Bassmann \*     |  3735  |     934      |    75.40%    |
+| 5        | Andi Stey §     |  1879  |     940      |    72.24%    |
+| 6        | Nico ~          |  5291  |     882      |    68.80%    |
+| 7        | Flo             |  4081  |     816      |    57.52%    |
+| 8        | Marv §~\*       |  4287  |     857      |    54.44%    |
+| 9        | Oliver Müller ~ |  2473  |     824      |    49.07%    |
+| 10       | Konstantin      |  3055  |     764      |    45.03%    |
+| 11       | Maxi ~~         |  2945  |     736      |    44.23%    |
+| 12       | Jö !~§!§        |  4403  |     734      |    42.16%    |
+| 13       | Andi Wess       |  3651  |     730      |    39.11%    |
+| 14       | Lukas §~~!      |  4108  |     685      |    33.92%    |
+| 15       | Manu P ~~~      |  4129  |     688      |    32.02%    |
+| 16       | Jannik !~       |  3949  |     658      |    26.63%    |
+| 17       | Lucas ~~        |  1918  |     639      |    14.60%    |
+| 18       | Louis !!~       |  2085  |     521      |    09.01%    |
 
 <br/>
 
-| Legende|                                   |
-| ----- | --------------------------------- |
-| \*    | Meisterschale                     |
-| §     | Manager-Lehrling                  |
-| ~     | Mit-Austragender Abschlussfest    |
-| !     | Rote Laterne                      |
+| Legende |                                |
+| ------- | ------------------------------ |
+| \*      | Meisterschale                  |
+| §       | Manager-Lehrling               |
+| ~       | Mit-Austragender Abschlussfest |
+| !       | Rote Laterne                   |
+
 <br/>
 Der Sieger-Index gibt an, wieviele Mananger der jeweilige Manager im Schnitt prozentual hinter sich lässt. Er ist somit der invertierte Verlierer-Index.
 
-### Hymne
+## Rekorde
+
+| Rekord                         |      | Manager   | Saison    |
+| ------------------------------ | ---- | --------- | --------- |
+| Höchste Punktzahl insgesamt    | 5983 | Julian    | 2020/2021 |
+| Höchste Punktzahl in Saison    | 1305 | Bassmann  | 2018/2019 |
+| Höchster Punktedurchschnitt    | 1067 | Andi Stey | 2019/2020 |
+| Höchste Anzahl Manager         | 18   |           | 2019/2020 |
+| Niedrigste Anzahl Manager      | 7    |           | 2015/2016 |
+| Niedrigste Punktzahl in Saison | 410  | Louis     | 2018/2019 |
+
+## Hymne
 
 Comunio, Comunio<br>
 Wie schön sind deine Spieler<br>
