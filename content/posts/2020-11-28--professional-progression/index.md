@@ -5,15 +5,16 @@ cover: stairs.jpg
 author: jo3rn
 ---
 
-###### *Update März 2021: Das hier diskutierte Progression-Framework wird aktuell durch eine [Version 2.0](https://monzo.com/documents/engineering-progression-framework-v2-0.pdf) ersetzt. Die URL progression.monzo.com führt deshalb momentan zur Karriere-Seite des Unternehmens. Das [GitHub Repository](https://github.com/monzo/progression-framework) ist weiterhin erreichbar.*
+###### _Update März 2021: Das hier diskutierte Progression-Framework wird aktuell durch eine [Version 2.0](https://monzo.com/documents/engineering-progression-framework-v2-0.pdf) ersetzt. Die URL progression.monzo.com führt deshalb momentan zur Karriere-Seite des Unternehmens. Das [GitHub Repository](https://github.com/monzo/progression-framework) ist weiterhin erreichbar._
 
 Jobbeschreibungen in der Softwarebranche sind mitunter sehr vage. Und nicht selten kommt es vor, dass das Tagesgeschäft ganz anders aussieht. Außerdem bieten sie selten eine solide Grundlage für die zugehörige Vergütung. Über Reddit bin ich zufällig auf einen Ansatz gestoßen, der sich von der Masse abhebt. Die Digital-Bank [Monzo](https://monzo.com/) (in etwa N26 für UK) hat ein Framework konzipiert, das Erfahrungsstufen verschiedener Rollen in Level unterteilt. Mit ziemlich ausführlichen Beschreibungen, was im jeweiligen Level verlangt wird. Natürlich machen das die meisten Firmen ähnlich (Junior, Senior, Lead, etc.), aber noch nie habe ich es derart konkret (und [Open Source](https://github.com/monzo/progression-framework)) niedergeschrieben gesehen.
 
 Auf [dieser Webseite](https://progression.monzo.com/) sind verschiedene Zuständigkeiten aufgelistet. Da mein Hintergrund im Mobile Development liegt, habe ich mir [diese Kategorie](https://progression.monzo.com/engineering/mobile) mal etwas genauer angesehen. Das Framework bietet ähnliche Ansätze auch für [Design](https://progression.monzo.com/design/product-design), [Marketing](https://progression.monzo.com/marketing), [Führung](https://progression.monzo.com/operations/ops-leadership) uvm.
 
-Als angestellter Entwickler sollte man sich gelegentlich fragen, welche Position man im Unternehmen einnimmt und wie man sich weiterentwickeln kann. Ergo: Welchen unternehmerischen Wert habe ich und wie kann ich ihn erhöhen? Dabei geht es natürlich auch um eine finanzielle Einschätzung. Viel gewichtiger sehe ich aber den Grad der [Selbstverwirklichung](https://de.wikipedia.org/wiki/Selbstverwirklichung), den ein Job mit sich bringen sollte. Also: Wie kann ich besser coole Sachen machen? Das *Progression Framework* von Monzo ist kein wissenschaftlich wasserdichter Leitfaden, aber gibt wegbereitende Denkanstöße.
+Als angestellter Entwickler sollte man sich gelegentlich fragen, welche Position man im Unternehmen einnimmt und wie man sich weiterentwickeln kann. Ergo: Welchen unternehmerischen Wert habe ich und wie kann ich ihn erhöhen? Dabei geht es natürlich auch um eine finanzielle Einschätzung. Viel gewichtiger sehe ich aber den Grad der [Selbstverwirklichung](https://de.wikipedia.org/wiki/Selbstverwirklichung), den ein Job mit sich bringen sollte. Also: Wie kann ich besser coole Sachen machen? Das _Progression Framework_ von Monzo ist kein wissenschaftlich wasserdichter Leitfaden, aber gibt wegbereitende Denkanstöße.
 
 Ganz allgemein unterteilen sie die Entwicklung in 5 Disziplinen:
+
 1. Können (Wissen über das Unternehmen und das Fachgebiet)
 2. Wertschöpfung (Größe, Tragweite und Wert der Arbeit)
 3. Einfluss (die Gegebenheiten zum Positiven verändern)
@@ -23,14 +24,16 @@ Ganz allgemein unterteilen sie die Entwicklung in 5 Disziplinen:
 Nachfolgend sind die wesentlichen Punkte zusammengefasst. Wenn du selbst Entwickler bist, wirst du dich sicher wiedererkennen. Versuche zu identifizieren, was du bereits erreicht hast, was die nächsten Schritte sein könnten und wo du vielleicht noch etwas nach hängst. Du wirst feststellen, dass Aspekte aus verschiedenen Stufen auf dich zutreffen werden. Die Übergänge sind fließend. Vergiss außerdem nicht, dass dies keine Bewertung deiner Person ist, sondern lediglich einzelner Kompetenzen.
 
 #### Disclaimer
-Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen, ohne sich mit ihrem Umfeld auseinanderzusetzen, können das vorgestellte Progression Framework getrost ignorieren. Das gezeichnete Fortschreiten innerhalb *eines* Unternehmens wird dann allerdings schwierig. Solche Prodigys sind vielleicht auch besser als freie Berater geeignet. Oder sie verbleiben einfach auf ihrem gemütlichen Stuhl. Denn das Fortschreiten an sich sollte kein Selbstzweck sein, wenn man mit seiner Rolle bereits zufrieden ist. Manchmal ist das sogar das Beste. Wie lehrt uns das [Peter-Prinzip](https://de.wikipedia.org/wiki/Peter-Prinzip): Man wird befördert, weil man in etwas erfolgreich war, um etwas ganz anderes zu tun ohne erfolgreich zu sein.
+
+Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen, ohne sich mit ihrem Umfeld auseinanderzusetzen, können das vorgestellte Progression-Framework getrost ignorieren. Das gezeichnete Fortschreiten innerhalb _eines_ Unternehmens wird dann allerdings schwierig. Solche Prodigys sind vielleicht auch besser als freie Berater geeignet. Oder sie verbleiben einfach auf ihrem gemütlichen Stuhl. Denn das Fortschreiten an sich sollte kein Selbstzweck sein, wenn man mit seiner Rolle bereits zufrieden ist. Manchmal ist das sogar das Beste. Wie lehrt uns das [Peter-Prinzip](https://de.wikipedia.org/wiki/Peter-Prinzip): Man wird befördert, weil man in etwas erfolgreich war, um etwas ganz anderes zu tun, ohne erfolgreich zu sein.
 
 ### Level 1
+
 1. Können (Mastery)
-   - schreibt Swift oder Kotlin Code nach Style Guide
+   - schreibt Swift oder Kotlin Code nach Styleguide
    - stellt proaktiv Fragen, erklärt was versucht wurde und was nicht funktioniert hat
-   - erstellt und verändert einfache Screens und Abläufe eigentständig
-   - fixt einfach Bugs
+   - erstellt und verändert einfache Screens und Abläufe eigenständig
+   - fixt einfache Bugs
    - setzt Feedback zu PRs um
 2. Wertschöpfung (Impact)
    - erledigt zugeteilte Tasks
@@ -47,6 +50,7 @@ Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen,
    - n/a
 
 ### Level 2
+
 1. Können
    - nutzt angebrachte Algorithmen und Datenstrukturen
    - nutzt passende Design Patterns
@@ -75,13 +79,14 @@ Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen,
 4. Kommunikation
    - gibt proaktiv auf empathische Weise hilfreiches und umsetzbares Feedback (z.B. in Code Reviews)
    - ist für Feedback dankbar
-   - gibt Feedback wenn es erbeten wird
+   - gibt Feedback, wenn es erbeten wird
    - beschreibt PRs begründet und verständlich
    - kann die eigene Arbeit dem Team und anderen zur Verfügung stellen
 5. Führung
    - n/a
 
 ### Level 3
+
 1. Können
    - nutzt Diagnosetools um die Leistung zu verbessern
    - baut nicht-triviale, koordinierte Screen Flows mit mehreren Diensten und Datenquellen
@@ -113,6 +118,7 @@ Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen,
    - erkennt Lernmöglichkeiten für andere beim Code Review
 
 ### Level 4
+
 1. Können
    - schreibt Code, der als Musterbeispiel für neue Entwickler dient
    - identifiziert und schließt Sicherheitslücken
@@ -125,7 +131,7 @@ Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen,
    - löst unklare Probleme
    - leitet das Schreiben von Vorschlägen mit kleinem bis mittlerem Umfang
    - löscht Feuer oder trägt wesentlich dazu bei
-   - trifft pragmatische Entscheidungen wenn es um die Aufnahme von technical debt geht
+   - trifft pragmatische Entscheidungen, wenn es um die Aufnahme von technical debt geht
    - zieht verschiedene Lösungswege für ein Problem in Betracht
    - teilt Projekte in kleinere Schritte auf, die jeweils einen Wert generieren
    - verfolgt eine langfristige Vision und definiert Meilensteine um dort hin zu gelangen
@@ -155,13 +161,14 @@ Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen,
    - führt Verbesserungen am Code durch und erklärt sie dem Team
 
 ### Level 5
+
 1. Können
-   - antizipiert signifikante Änderungen an den Plattformen,definiert mögliche Lösungen und startet/beendet diese Projekte
+   - antizipiert signifikante Änderungen an den Plattformen, definiert mögliche Lösungen und startet/beendet diese Projekte
    - wandelt Anforderungen auf hoher Flugebene in diskrete technische Angelegenheiten um
    - vermittelt und pflegt im Fachgebiet eine Kultur, die auf hohe Qualität achtet
    - koordiniert Aktivitäten über den eigenen Fachbereich hinaus
    - antizipiert Bedürfnisse von anderen Teams und gemeinsame Probleme und identifiziert in Zusammenarbeit mögliche Lösungen
-   - verantwortet technisch anspruchsvolles Debugging komplexer Probleme für die kein Domänenwissen im Unternehmen existiert
+   - verantwortet technisch anspruchsvolles Debugging komplexer Probleme, für die kein Domänenwissen im Unternehmen existiert
 2. Wertschöpfung
    - knackt die "harten Nüsse" in einem Projekt
    - leitet die Behebung ungeahnter Zwischenfälle
@@ -181,7 +188,7 @@ Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen,
    - kommuniziert die langfristige Vision & Mission des Unternehmens und des Fachbereichs
 5. Führung
    - vermittelt die Entwicklungsprinzipien des Unternehmens
-   - arbeitet mit Managern zusammen um anderen Entwicklern beim Wachstum zu helfen
+   - arbeitet mit Managern zusammen, um anderen Entwicklern beim Wachstum zu helfen
    - fördert die effektive Zusammenarbeit in multidisziplinären Gruppen (Backend, Mobile, Data, Design, Web)
    - delegiert technische Entscheidungen mit geringem Risiko und leichter Umkehrbarkeit
    - trifft technische Entscheidungen mit hohem Risiko und geringer Umkehrbarkeit
@@ -189,6 +196,7 @@ Diejenigen, die absolute Experten in Sprache XY oder Framework YZ werden wollen,
    - formiert neue Teams
 
 ### Level 6
+
 1. Können
    - n/a
 2. Wertschöpfung
