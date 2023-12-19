@@ -1,0 +1,66 @@
+.category {
+  margin-top: 1em;
+  padding: 0.2em;
+  padding-inline-start: 2em;
+  padding-inline-end: 2em;
+  border: 2px solid;
+  border-radius: 10%;
+}
+
+.tagLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tagLink:hover span {
+  background-color: #121212;
+  border: 2px solid #6f9c72;
+}
+
+.tagLink:hover {
+  color: #6f9c72;
+}
+
+.date {
+  margin-top: 0.5em;
+}
+
+.coffee {
+  background-color: brown;
+  border-color: brown;
+}
+
+.computer_science {
+  background-color: midnightblue;
+  border-color: midnightblue;
+}
+
+.innovation {
+  background-color: teal;
+  border-color: teal;
+}
+
+.rant {
+  background-color: crimson;
+  border-color: crimson;
+}
+
+.recommendation {
+  background-color: indigo;
+  border-color: indigo;
+}
+
+.security {
+  background-color: darkslategray;
+  border-color: darkslategray;
+}
+
+.software {
+  background-color: mediumseagreen;
+  border-color: mediumseagreen;
+}
+
+.web {
+  background-color: sienna;
+  border-color: sienna;
+}

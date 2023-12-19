@@ -1,0 +1,100 @@
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.noDecoration {
+  text-decoration: none;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: #666;
+}
+
+.coops {
+  background-color: #FFF;
+  text-align: center;
+  border: 5px solid #00600f;
+}
+
+.table {
+  border: none;
+  border-spacing: 0;
+}
+
+.table th {
+  text-align: start;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.table td {
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.table tr:nth-child(even) {
+  background-color: #333;
+}
+
+.headingHeader {
+  color: var(--foreground);
+  text-align: center;
+}
+
+.linkLight {
+  color: #6f9c72;
+}
+
+.listCircle {
+  list-style: circle;
+}
+
+.icon {
+  color: #8c7b75;
+}
