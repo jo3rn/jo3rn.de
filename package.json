@@ -11,10 +11,14 @@
     "gray-matter": "^4.0.3",
     "next": "latest",
     "next-themes": "^0.2.1",
+    "next-translate": "^2.6.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.11.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.2"
+  },
+  "devDependencies": {
+    "next-translate-plugin": "^2.6.2"
   }
 }

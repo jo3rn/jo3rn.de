@@ -1,75 +1,77 @@
 import Head from "next/head";
 import Link from "next/link";
-import Date from "../components/date";
+import useTranslation from 'next-translate/useTranslation'
+import Trans from 'next-translate/Trans'
+import DateTimeElement from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
-
-  const greeting = locale === 'de' ? "Ich helfe dir bei Software." : "I'll help you with software."
 
   return {
     props: {
       allPostsData,
-      greeting,
     },
   };
 }
 
 export default function Home(props) {
+  const { t, lang } = useTranslation()
+
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>{props.greeting}</p>
+        <p>{t('home:greeting')}</p>
         <ul>
-          <li>interaktive Webseiten, z.B. Experimente mit <a href="http://www.otree.org/">oTree</a></li>
-          <li>Skripte zum Konvertieren oder Auswerten von Daten</li>
-          <li>Hosting, Serverinfrastruktur, Domainregistrierung</li>
+          <li key="greeting-otree"><Trans i18nKey="home:greeting-otree" components={[<a href="http://www.otree.org/" />]} /></li>
+          <li key="greeting-scripts">{t('home:greeting-scripts')}</li>
+          <li key="greeting-server">{t('home:greeting-server')}</li>
         </ul>
       </section>
 
       <section className={utilStyles.headingMd}>
-        <h2 className={utilStyles.headingLg}>Kontakt</h2>
+        <h2 className={utilStyles.headingLg}>{t('common:contact')}</h2>
         <ul>
-          <li><a rel="me" href="https://mastodon.social/@jo3rn">Mastodon</a></li>
-          <li><a href="https://www.linkedin.com/in/jo3rn">LinkedIn</a></li>
-          <li><a href="mailto:website@jo3rn.de">website@jo3rn.de</a></li>
+          <li key="mastodon"><a rel="me" href="https://mastodon.social/@jo3rn">Mastodon</a></li>
+          <li key="linkedin"><a href="https://www.linkedin.com/in/jo3rn">LinkedIn</a></li>
+          <li key="email"><a href="mailto:website@jo3rn.de">website@jo3rn.de</a></li>
         </ul>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Neue Blog Einträge</h2>
+        <h2 className={utilStyles.headingLg}>{t('home:blog-heading')}</h2>
         <ul className={utilStyles.list}>
           {props.allPostsData.slice(0, 3).map(({ category, id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/blog/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} /> ~~ {category}
+                <DateTimeElement dateString={date} /> ~~ {category}
               </small>
             </li>
           ))}
         </ul>
-        <Link href="/blog">zum Blog</Link>
+        <Link href="/blog">{t('home:blog-link')}</Link>
       </section>
 
       <section className={utilStyles.headingMd}>
         <h2 className={utilStyles.headingLg}>Portfolio</h2>
+        <p>{t('home:portfolio-work-since', {years: new Date().getFullYear() - 2014})}</p>
         <ul>
-          <li><a href="https://github.com/jo3rn/KidsCOOP">Public Goods Experiment</a></li>
-          <li><a href="https://github.com/jo3rn/oTree-apps">Devil's Task, Frog Jump & Time Preference</a></li>
-          <li><a href="https://github.com/jo3rn/oTree_FFM">Nudging Experiment</a></li>
-          <li>weitere auf Anfrage</li>
+          <li key="portfolio-public-goods"><a href="https://github.com/jo3rn/KidsCOOP">Public Goods Experiment</a></li>
+          <li key="portfolio-devils-task"><a href="https://github.com/jo3rn/oTree-apps">Devil's Task, Frog Jump & Time Preference</a></li>
+          <li key="portfolio-nudging"><a href="https://github.com/jo3rn/oTree_FFM">Nudging Experiment</a></li>
+          <li key="portfolio-other">{t('home:portfolio-other')}</li>
         </ul>
       </section>
 
       <section className={utilStyles.headingMd}>
-        <h2 className={utilStyles.headingLg}>Erfolgreiche Kooperationen</h2>
+        <h2 className={utilStyles.headingLg}>{t('home:coop-heading')}</h2>
         <div className={utilStyles.coops}>
           <span>
             <Link href="https://www.uni-frankfurt.de/">

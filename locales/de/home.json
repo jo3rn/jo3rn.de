@@ -1,0 +1,11 @@
+{
+  "greeting": "Ich helfe dir bei Software.",
+  "greeting-otree": "interaktive Webseiten, z.B. Experimente mit <0>oTree</0>",
+  "greeting-scripts": "Skripte zum Konvertieren oder Auswerten von Daten",
+  "greeting-server": "Hosting, Serverinfrastruktur, Domainregistrierung",
+  "blog-heading": "Neue Blog Einträge",
+  "blog-link": "alle Blog Einträge",
+  "portfolio-work-since": "Ich entwickle seit etwa {{ years }} Jahren Software.",
+  "portfolio-other": "weitere auf Anfrage",
+  "coop-heading": "Erfolgreiche Kooperationen"
+}

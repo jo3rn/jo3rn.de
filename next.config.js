@@ -1,8 +1,6 @@
+const nextTranslate = require('next-translate-plugin')
+
 module.exports = {
-    i18n: {
-      // These are all the locales you want to support in your application
-      locales: ['de', 'en'],
-      // This is the default locale you want to be used when visiting a non-locale prefixed path e.g. `/hello`
-      defaultLocale: 'de',
-    },
+    // get i18n config from i18n.json
+    ...nextTranslate(),
   }

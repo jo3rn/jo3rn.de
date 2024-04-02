@@ -1,0 +1,11 @@
+{
+  "greeting": "I'll help you with software.",
+  "greeting-otree": "interactive websites, e.g. experiments with <0>oTree</0>",
+  "greeting-scripts": "scripts for converting or evaluating data",
+  "greeting-server": "hosting, server infrastructure, domain registration",
+  "blog-heading": "Latest blog posts",
+  "blog-link": "all blog posts",
+  "portfolio-work-since": "I have been developing software for about {{ years }} years.",
+  "portfolio-other": "more upon request",
+  "coop-heading": "Successful collaborations"
+}
