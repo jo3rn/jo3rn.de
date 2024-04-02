@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { TbLamp, TbLampOff } from "react-icons/tb";
@@ -13,7 +14,9 @@ export const siteTitle = "jo3rn.de - utilize technology";
 export default function Layout({ children, home, blogPost }) {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const router = useRouter();
   useEffect(() => setMounted(true), [])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -87,21 +90,35 @@ export default function Layout({ children, home, blogPost }) {
           <li>
             <a href="https://ko-fi.com/jo3rn">support me</a>
           </li>
-          { mounted && (
-            <>
-            •
-                {theme == 'light' ? (
-                  <li className={styles.themeToggle} onClick={() => setTheme('dark')}>
-                    <TbLampOff /> Licht aus
-                  </li>
-                ) : (
-                  <li className={styles.themeToggle} onClick={() => setTheme('light')}>
-                    <TbLamp /> Licht an
-                  </li>
-                )}
-            </>
-          )}
         </ul>
+
+        <ul>
+        {router.locales.map((locale, index) => (
+          <>
+            {index > 0 ? <li>•</li> : ""}
+            <li key= {locale}>
+              
+              <Link href={router.asPath} locale={locale}>
+                {locale}
+              </Link>
+            </li>
+          </>
+          ))}
+        </ul>
+
+        { mounted && (
+          <ul>
+            {theme == 'light' ? (
+              <li className={styles.themeToggle} onClick={() => setTheme('dark')}>
+                <TbLampOff /> Licht aus
+              </li>
+            ) : (
+              <li className={styles.themeToggle} onClick={() => setTheme('light')}>
+                <TbLamp /> Licht an
+              </li>
+            )}
+          </ul>
+        )}
       </footer>
     </div>
   );

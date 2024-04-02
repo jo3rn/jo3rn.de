@@ -6,24 +6,27 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const allPostsData = getSortedPostsData();
+
+  const greeting = locale === 'de' ? "Ich helfe dir bei Software." : "I'll help you with software."
+
   return {
     props: {
       allPostsData,
+      greeting,
     },
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home(props) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Ich helfe dir bei Software.
-        </p>
+        <p>{props.greeting}</p>
         <ul>
           <li>interaktive Webseiten, z.B. Experimente mit <a href="http://www.otree.org/">oTree</a></li>
           <li>Skripte zum Konvertieren oder Auswerten von Daten</li>
@@ -43,7 +46,7 @@ export default function Home({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Neue Blog Einträge</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.slice(0, 3).map(({ category, id, date, title }) => (
+          {props.allPostsData.slice(0, 3).map(({ category, id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/blog/${id}`}>{title}</Link>
               <br />
