@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import Date from "../components/date";
 import Layout, { siteTitle } from "../components/layout";
@@ -74,7 +73,7 @@ export default function Home(props) {
         <div className={utilStyles.coops}>
           <span>
             <Link href="https://www.uni-frankfurt.de/">
-              <Image
+              <img
                 src="/images/cooperations/goethe.png"
                 height={144}
                 width={144}
@@ -84,7 +83,7 @@ export default function Home(props) {
           </span>
           <span>
             <Link href="https://www.uni-mainz.de/">
-              <Image
+              <img
                 src="/images/cooperations/mainz.png"
                 height={144}
                 width={144}
@@ -94,7 +93,7 @@ export default function Home(props) {
           </span>
           <span>
             <Link href="https://www.ku.dk/">
-              <Image
+              <img
                 src="/images/cooperations/copenhagen.png"
                 height={144}
                 width={144}
@@ -104,7 +103,7 @@ export default function Home(props) {
           </span>
           <span>
             <Link href="https://www.hs-fulda.de/">
-              <Image
+              <img
                 src="/images/cooperations/fulda.svg"
                 height={144}
                 width={144}
@@ -114,7 +113,7 @@ export default function Home(props) {
           </span>
           <span>
             <Link href="https://www.uni-koeln.de/">
-              <Image
+              <img
                 src="/images/cooperations/cologne.webp"
                 height={144}
                 width={144}
