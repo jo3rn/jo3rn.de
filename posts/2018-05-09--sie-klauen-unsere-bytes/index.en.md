@@ -1,5 +1,5 @@
 ---
-title: Sie klauen unsere Bytes
+title: They took our bytes!
 category: "computer science"
 author: jo3rn
 ---

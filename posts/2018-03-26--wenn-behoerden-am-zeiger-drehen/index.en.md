@@ -1,5 +1,5 @@
 ---
-title: Wenn Behörden am Zeiger drehen
+title: Is the clock ticking for daylight saving time?
 category: "rant"
 cover: uhren.jpg
 author: jo3rn

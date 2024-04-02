@@ -1,5 +1,5 @@
 ---
-title: Dies schrieb ein Mensch
+title: A human wrote this
 category: "web"
 author: jo3rn
 ---

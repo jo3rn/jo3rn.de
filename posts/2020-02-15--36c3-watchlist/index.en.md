@@ -1,5 +1,5 @@
 ---
-title: 36C3 Watchlist
+title: 36C3 watchlist
 category: "security"
 author: jo3rn
 ---

@@ -1,5 +1,5 @@
 ---
-title: Wer hat Angst vor Punycode?
+title: Who is afraid of punycode?
 category: "security"
 author: jo3rn
 ---

@@ -1,5 +1,5 @@
 ---
-title: Günstigere Pizza mit JavaScript
+title: Cheap pizza with JavaScript
 category: "web"
 author: jo3rn
 ---

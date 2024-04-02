@@ -1,5 +1,5 @@
 ---
-title: Magnetscheiben zu Pflugscharen
+title: Magnetic disks to ploughshares
 category: "empfehlung"
 author: jo3rn
 ---

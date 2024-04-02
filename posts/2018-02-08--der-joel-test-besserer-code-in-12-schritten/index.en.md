@@ -1,5 +1,5 @@
 ---
-title: Der Joel Test - besserer Code in 12 Schritten
+title: The Joel Test - 12 steps for better code
 category: "software engineering"
 author: jo3rn
 ---

@@ -1,5 +1,5 @@
 ---
-title: Git Tutorial für Beginner
+title: Git tutorial for beginners
 category: "software engineering"
 author: jo3rn
 ---

@@ -1,5 +1,5 @@
 ---
-title: April, April…
+title: April Fool's...
 category: "web"
 author: jo3rn
 ---

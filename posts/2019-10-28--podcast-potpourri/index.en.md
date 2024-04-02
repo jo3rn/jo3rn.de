@@ -1,5 +1,5 @@
 ---
-title: Podcast Potpourri
+title: Podcast potpourri
 category: "empfehlung"
 author: jo3rn
 ---

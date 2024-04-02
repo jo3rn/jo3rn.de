@@ -1,5 +1,5 @@
 ---
-title: Parameter vs. Argument
+title: Parameter vs. argument
 category: "software engineering"
 author: jo3rn
 ---
