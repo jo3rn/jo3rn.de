@@ -53,4 +53,3 @@ Um sich der drohenden Knappheit von [IPv4](https://de.wikipedia.org/wiki/IPv4)-A
 ## Und in diesem Jahr?
 
 In 2020 erschien der April-RFC [The Quantum Bug](https://tools.ietf.org/html/rfc8774). Zufällig beschäftigt er sich auch mit Netzwerken und zwar was passiert, wenn die [Round Trip Time](https://de.wikipedia.org/wiki/Paketumlaufzeit) (die Zeit zwischen Aussenden und Empfangen eines Datenpakets) durch die Nutzung von [Quantennetzwerken](https://de.wikipedia.org/wiki/Quantennetzwerk) auf 0 sinkt. Protokolle mit Mechanismen, die von einer RTT > 0 ausgehen, würden nicht mehr einwandfrei funktionieren. Ein "Internet meltdown", wie er beim [Millenium-Bug](https://de.wikipedia.org/wiki/Jahr-2000-Problem) bevorstand, wäre die Folge.
-

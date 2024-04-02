@@ -6,24 +6,25 @@ import styles from "./category.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import Date from "../../components/date";
 
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+export async function getStaticProps({ params, locale }) {
+  const postData = await getPostData(params.id, locale);
   return {
     props: {
       postData,
+      locale,
     },
   };
 }
 
-export async function getStaticPaths() {
-  const paths = getAllPostIds();
+export async function getStaticPaths({ locales }) {
+  const paths = getAllPostIds(locales);
   return {
     paths,
     fallback: false,
   };
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData, locale }) {
   return (
     <Layout blogPost>
       <Head>
@@ -32,7 +33,7 @@ export default function Post({ postData }) {
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
 
-        <a className={styles.tagLink} href={"/blog/category/" + postData.category.replace(" ", "-")}>
+        <a className={styles.tagLink} href={"category/" + postData.category.replace(" ", "-")}>
           <span
             className={`${clsx({
               [styles.coffee]: postData.category === "coffee table",
@@ -50,7 +51,7 @@ export default function Post({ postData }) {
         </a>
 
         <div className={`${utilStyles.lightText} ${styles.date}`}>
-          <Date dateString={postData.date} />
+          <Date dateString={postData.date} locale={locale} />
         </div>
 
         <br />

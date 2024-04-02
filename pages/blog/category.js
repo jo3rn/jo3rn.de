@@ -6,8 +6,8 @@ import utilStyles from "../../styles/utils.module.css";
 import { getCategoriesWithPosts } from "../../lib/category";
 
 
-export async function getStaticProps() {
-    const categoriesWithPosts = getCategoriesWithPosts()
+export async function getStaticProps({ locale }) {
+    const categoriesWithPosts = getCategoriesWithPosts(locale)
     return {
         props: {
             categoriesWithPosts,

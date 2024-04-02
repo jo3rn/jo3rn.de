@@ -7,17 +7,18 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+export async function getStaticProps({ locale }) {
+  const allPostsData = getSortedPostsData(locale);
 
   return {
     props: {
       allPostsData,
+      locale,
     },
   };
 }
 
-export default function Home(props) {
+export default function Home({ allPostsData, locale }) {
   const { t, lang } = useTranslation()
 
   return (
@@ -46,12 +47,12 @@ export default function Home(props) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>{t('home:blog-heading')}</h2>
         <ul className={utilStyles.list}>
-          {props.allPostsData.slice(0, 3).map(({ category, id, date, title }) => (
+          {allPostsData.slice(0, 3).map(({ category, id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/blog/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
-                <DateTimeElement dateString={date} /> ~~ {category}
+                <DateTimeElement dateString={date} locale={locale} /> ~~ {category}
               </small>
             </li>
           ))}

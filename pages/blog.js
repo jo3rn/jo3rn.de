@@ -5,16 +5,17 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+export async function getStaticProps({ locale }) {
+  const allPostsData = getSortedPostsData(locale);
   return {
     props: {
       allPostsData,
+      locale,
     },
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, locale }) {
   return (
     <Layout>
       <Head>
@@ -30,7 +31,7 @@ export default function Home({ allPostsData }) {
               <Link href={`/blog/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} /> ~~ {category}
+                <Date dateString={date} locale={locale} /> ~~ {category}
               </small>
             </li>
           ))}

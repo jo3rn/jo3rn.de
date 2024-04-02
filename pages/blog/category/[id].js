@@ -6,8 +6,8 @@ import styles from "../category.module.css";
 import utilStyles from "../../../styles/utils.module.css";
 import Date from "../../../components/date";
 
-export async function getStaticProps({ params }) {
-    const categoryWithPosts = await getPostsOfCategory(params.id)
+export async function getStaticProps({ params, locale }) {
+    const categoryWithPosts = await getPostsOfCategory(params.id, locale)
     return {
         props: {
             categoryWithPosts,
@@ -15,8 +15,8 @@ export async function getStaticProps({ params }) {
     };
 }
 
-export async function getStaticPaths() {
-    const paths = getAllCategoryIds();
+export async function getStaticPaths({ locales }) {
+    const paths = getAllCategoryIds(locales);
     return {
         paths,
         fallback: false,

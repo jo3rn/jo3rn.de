@@ -4,6 +4,8 @@ category: "software engineering"
 author: jo3rn
 ---
 
+GERMAN!
+
 ###### _Update März 2021: Das hier diskutierte Progression-Framework wird aktuell durch eine [Version 2.0](https://monzo.com/documents/engineering-progression-framework-v2-0.pdf) ersetzt. Die URL [progression.monzo.com](https://progression.monzo.com) zeigt momentan nicht mehr das Framework, sondern leitet zur Karriere-Seite des Unternehmens weiter. Den hier diskutierten Stand findet man bei [web.archive.org](https://web.archive.org/web/20200807083945/https://progression.monzo.com/) oder im [GitHub Repository](https://github.com/monzo/progression-framework)._
 
 Jobbeschreibungen in der Softwarebranche sind mitunter sehr vage. Und nicht selten kommt es vor, dass das Tagesgeschäft ganz anders aussieht. Außerdem bieten sie oft wenig Anhaltspunkte für die zugehörige Vergütung. Über Reddit bin ich zufällig auf einen Ansatz gestoßen, der sich von der Masse abhebt. Die Digital-Bank [Monzo](https://monzo.com/) (in etwa N26 für UK) hat ein Framework konzipiert, das Erfahrungsstufen verschiedener Rollen in Level unterteilt. Mit ziemlich ausführlichen Beschreibungen, was im jeweiligen Level verlangt wird. Natürlich machen das die meisten Firmen ähnlich (Junior, Senior, Lead, etc.), aber noch nie habe ich es derart konkret (und [Open Source](https://github.com/monzo/progression-framework)) niedergeschrieben gesehen.

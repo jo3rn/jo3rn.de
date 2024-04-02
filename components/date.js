@@ -1,11 +1,11 @@
 import { parseISO, format } from "date-fns";
-import { de } from "date-fns/locale";
+import { de, en } from "date-fns/locale";
 
-export default function DateTimeElement({ dateString }) {
+export default function DateTimeElement({ dateString, locale }) {
   const date = parseISO(dateString);
   return (
     <time dateTime={dateString}>
-      {format(date, "do LLLL yyyy", { locale: de })}
+      {format(date, "do LLLL yyyy", { locale: locale === "de" ? de : en })}
     </time>
   );
 }
