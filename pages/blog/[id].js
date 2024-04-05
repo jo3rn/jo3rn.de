@@ -28,7 +28,7 @@ export default function Post({ postData, locale }) {
   return (
     <Layout blogPost>
       <Head>
-        <title>{postData.title} - jo3rn.de</title>
+        <title>{`${postData.title} - jo3rn.de`}</title>
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

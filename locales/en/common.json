@@ -1,13 +1,16 @@
 {
-    "contact": "Contakt",
-    "layout-link-to-blog": "go to blog",
-    "layout-link-to-home": "go to home",
-    "layout-footer-blog": "blog",
-    "layout-footer-imprint": "imprint",
-    "layout-footer-privacy": "data protection",
-    "layout-footer-support": "support me",
-    "layout-footer-locale-de": "🇩🇪 German",
-    "layout-footer-locale-en": "🇬🇧 English",
-    "layout-footer-lights-off": "turn lights off",
-    "layout-footer-lights-on": "turn lights on"
+  "contact": "Contakt",
+  "layout-link-to-blog": "go to blog",
+  "layout-link-to-home": "go to home",
+  "layout-footer-blog": "blog",
+  "layout-footer-imprint": "imprint",
+  "layout-footer-privacy": "data protection",
+  "layout-footer-support": "support me",
+  "layout-footer-locale-de": "🇩🇪 German",
+  "layout-footer-locale-en": "🇬🇧 English",
+  "layout-footer-lights-off": "turn lights off",
+  "layout-footer-lights-on": "turn lights on",
+  "categories": "Categories",
+  "category-heading": "Posts grouped by category",
+  "category-posts-heading": "Posts of category"
 }
