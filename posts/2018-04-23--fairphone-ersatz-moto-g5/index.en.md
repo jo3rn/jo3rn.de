@@ -1,6 +1,6 @@
 ---
 title: Fairphone replacement - Moto G5
-category: "empfehlung"
+category: "recommendation"
 author: jo3rn
 ---
 

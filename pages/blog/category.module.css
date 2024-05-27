@@ -15,10 +15,7 @@
 .tagLink:hover span {
   background-color: #121212;
   border: 2px solid #6f9c72;
-}
-
-.tagLink:hover {
-  color: #6f9c72;
+  color: white;
 }
 
 .date {
@@ -28,39 +25,47 @@
 .coffee {
   background-color: brown;
   border-color: brown;
+  color: white;
 }
 
 .computer_science {
   background-color: midnightblue;
   border-color: midnightblue;
+  color: white;
 }
 
 .innovation {
   background-color: teal;
   border-color: teal;
+  color: white;
 }
 
 .rant {
   background-color: crimson;
   border-color: crimson;
+  color: white;
 }
 
 .recommendation {
   background-color: indigo;
   border-color: indigo;
+  color: white;
 }
 
 .security {
   background-color: darkslategray;
   border-color: darkslategray;
+  color: white;
 }
 
 .software {
   background-color: mediumseagreen;
   border-color: mediumseagreen;
+  color: black;
 }
 
 .web {
   background-color: sienna;
   border-color: sienna;
+  color: white;
 }

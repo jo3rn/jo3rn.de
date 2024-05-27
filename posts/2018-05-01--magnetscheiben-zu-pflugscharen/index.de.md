@@ -1,6 +1,6 @@
 ---
 title: Magnetscheiben zu Pflugscharen
-category: "empfehlung"
+category: "recommendation"
 author: jo3rn
 ---
 

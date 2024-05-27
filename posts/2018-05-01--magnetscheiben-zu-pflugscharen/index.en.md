@@ -1,6 +1,6 @@
 ---
 title: Magnetic disks to ploughshares
-category: "empfehlung"
+category: "recommendation"
 author: jo3rn
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Developer PC Build 2019 <1000€
-category: "empfehlung"
+category: "recommendation"
 author: jo3rn
 ---
 

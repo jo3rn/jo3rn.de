@@ -1,6 +1,6 @@
 ---
 title: Podcast potpourri
-category: "empfehlung"
+category: "recommendation"
 author: jo3rn
 ---
 
