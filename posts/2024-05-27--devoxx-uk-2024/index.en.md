@@ -54,6 +54,10 @@ ____
 
 There were a few arcade machines (Pong, Space Invaders,...) in the entrance area. Whoever achieved the highest total score over the course of the days won [Lego's Pac-Man set](https://www.lego.com/product/pac-man-arcade-10323). During the breaks, however, we were more motivated to hack the system than to actually play the games. You had to enter a personalized code and the score was transmitted to a server via QR code. Unfortunately, after dismantling the URL and trying out a few things, we did not find any obvious weaknesses. The organizers probably knew their target group too well and took precautions accordingly.
 
+I was glad to see a vegan option on the lunch menu every day. A banality that is unfortunately often sorely missed (also in our own canteen), especially if you mistakenly market yourself to be an animal- or eco-friendly entity.
+
+The organizers are often exceptionally sophisticated when it comes to arranging advertising space. All too often, you have to go through them several times a day (toilet, eating, drinking, switching rooms). Usually, I just try to survive the exhibitor area without being drawn into pointless marketing drivel. It's a different matter with exhibitors whose products we already use. If you have the right questions ready, it pays off that there are usually a few people from the technical areas present at the booth. At Gradle, we were therefore able to pick up valuable tips that we put into practice just a few days later.
+
 !["Using mocks is like learning chemistry from cartoons."](/images/blog/2024-05-27-mocks.png)
 
 We utilize rather simple database queries in our services, which is why we've never asked ourselves [Mocks vs Testcontainers](https://piped.video/watch?v=aVDDfN8pwpM) (by Ivan Ponomarev). The contract testing presented earlier also makes this question less relevant. Nevertheless, it is good to know that there are testcontainers for [Postgres](https://java.testcontainers.org/modules/databases/postgres/), [RabbitMQ](https://java.testcontainers.org/modules/rabbitmq/) and the like (even [GCloud](https://java.testcontainers.org/modules/gcloud/)) in case we ever stray off the beaten tracks.
@@ -75,7 +79,7 @@ Please answer [these 4 questions](https://martinfowler.com/bliki/ContinuousInteg
 3. Do these commits cause an automated build and test?
 4. If the build fails, is it usually back to green within 10 minutes?
 
-If you answered _"No"_ at least once, the jump right into [Clare Sudbery](https://mastodon.social/@claresudbery)'s [Continuous Integration – That’s not what they meant](https://piped.video/watch?v=nJe6MAgLFvk) to find out how to get to _"Yes"_ (or whether you have to at all).
+If you answered _"No"_ at least once, then jump right into [Clare Sudbery](https://mastodon.social/@claresudbery)'s [Continuous Integration – That’s not what they meant](https://piped.video/watch?v=nJe6MAgLFvk) to find out how to get to _"Yes"_ (or whether you have to at all).
 
 !["AI's Dual-Use Potential: Balancing Innovation and Risk"](/images/blog/2024-05-27-ai.png)
 
