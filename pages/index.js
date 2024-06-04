@@ -107,7 +107,7 @@ export default function Home({ allPostsData, locale }) {
           <span>
             <Link href="https://www.hs-fulda.de/">
               <img
-                src="/images/cooperations/fulda.svg"
+                src="/images/cooperations/fulda.png"
                 height={144}
                 width={144}
                 alt="Logo of University of Applied Sciences Fulda"
