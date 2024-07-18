@@ -25,11 +25,13 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 - Hobelz [vegane Hot Dogs Classic, 200g](https://kokku-online.de/hobelz-veggie-world-vegane-hot-dogs-classic/) (2.39€)
 - iChoc [White Nougat Crisp Schokolade, 80g](https://ichoc.de/vegane-schokoladen/white-nougat-crisp/) (1.00€)
 - mindsweets [Weihnachts-Bärchen, 75g](https://www.mindsweets.de/75g-Weihnachts-Baerchen-verschiedene-Motive-WeB-Haus) (0.99€)
+- Mondarella [Grill Rogue, 2x95g](https://mondarella.eu/unsere-produkte/mondarella-grill-rouge/) (3.79€)
 - NOT GUILTY [Milly the Star (weiche Fruchtgummis), 90g](https://notguilty-sweetrevolution.com/de/shop/our-sweets/milly-the-star/) (1.00€)
 - the nu company [nucao Schokoriegel - Creamy Hazelnut, 33g](https://www.the-nu-company.com/products/nucao-single-creamy-hazelnut-organic-box-of-12-x-33g)
 - Punselie's [Stroopkoekjes, 8x 200g](https://www.punseliewebshop.nl/en/8-stuks-200-grs-tray-punseliekoekjes.html) (14.75€)
 - Schogetten [Salz Karamell, 125g (14 Stück)](https://www.schogetten.de/produkte/vegan/salz-karamell-vegan/) leckerer zähflüssiger Kern, leider jedes Stück einzeln verpackt
 - Taifun [Grillknacker, 250g](https://www.taifun-tofu.de/de/produkte/tofu-wuerstchen-grillknacker) (3.79€)
+- Terra Vegane [Prima-Topper Streualternative](https://www.shop.terravegane.com/products/prima-topper-classic-style) (1.49€)
 - Unox [Cup a Soup - Tomaat](https://www.holland-shop.com/p/cup-a-soup-tomaat-tomatensuppe-24-packungen-a-165-ml-by-unox) (24 Stück, 15.49€)
 - veganz [Bliss Ball Coconut, 42g](https://veganz.de/produkt/bio-veganz-bliss-ball-coconut/) (1.59€)
 - veganz [Choc Bar - Coconut, 40g](https://veganz.de/produkt/veganz-choc-bar-coconut-40g/) (1.49€)
@@ -43,6 +45,10 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 - Wheaty [Gran Chorizo, 200g](https://www.wheaty.de/produkt/vegane-aufschnittrolle-gran-chorizo/) (5.79€)
 
 Ja, das ist viel Süßkram und processed food. Für Paprika und Wirsing braucht's halt keine Liste.
+
+## Kaffee
+
+
 
 ## Non-Food
 
@@ -62,3 +68,5 @@ Hier auch noch eine **"Deny"-Liste** an Produkten, die mir nicht gefallen haben.
 - Vantastic foods [Carpaccio Bacon Style, 90g](https://www.vegan-total.de/de/lebensmittel/brotbelaege/vantastic-foods-carpaccio-bacon-style-90g) (1.49€)
 - veganz Wafer Choc Bar [Dark, 30g](https://veganz.de/produkt/bio-veganz-wafer-choc-bar-dark/) und [Hazel, 30g](https://veganz.de/produkt/bio-veganz-wafer-choc-bar-hazel/) (je 1.49€)
   Waffel weich statt knusprig
+
+### No-Go Kaffee
