@@ -17,6 +17,7 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 - BRANDGUT [Yes, Pe Can! Pekannuss-Aufstrich, 160g](https://www.brandgut.net/produkt/yes-pe-can/) (2.99€)
 - dmBio [vegane Frikadellen, 200g](https://www.dm.de/dmbio-vegane-frikadellen-p4066447046168.html) (2.95€)
 - dmBio [veganes Pasta Topping (mit Basilikum & Knoblauch), 80g](https://www.dm.de/dmbio-veganes-pasta-topping-mit-basilikum-und-knoblauch-p4066447315530.html) (1.00€)
+- Elephant [Pretzels With A Twist - Caramelised Onion (160g)](https://www.elephantpretzels.com/de/produkte/gedrehte-pretzels-mit-karamellisierten-zwiebeln/) (1.00€)
 - Fine Gusto [Vegan Jerky BBQ, 50g](https://kokku-online.de/fine-gusto-nature-vegan-jerky-bbq/) (1.99€), _Fine Gusto_ ist leider auch dick im _Beef_ Jerky Geschäft, aber deshalb kennen sie sich mit dem Würzen aus
 - Frosta [Gemüse Bowl Cremiges Linsen Curry mit Kürbis und Spinat, 480g](https://www.frosta.de/produkte/tiefkuehlgemuese/gemuese-bowl-cremiges-linsen-curry-mit-kuerbis-und-spinat/)
   zusammen mit etwas zusätzlichem Tiefkühlspinat zubereitet
@@ -24,6 +25,7 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 - Hobelz [Bratgriller Kräuter, 250g](https://kokku-online.de/hobelz-veggie-world-bratgriller-kraeuter/) (2.79€)
 - Hobelz [vegane Hot Dogs Classic, 200g](https://kokku-online.de/hobelz-veggie-world-vegane-hot-dogs-classic/) (2.39€)
 - iChoc [White Nougat Crisp Schokolade, 80g](https://ichoc.de/vegane-schokoladen/white-nougat-crisp/) (1.00€)
+- Love Raw [Cre&m Wafer Bars Salted Caramel (6x 45g)](https://eatloveraw.com/products/salted-caramel-cre-m-wafer-bars-1) (14.95€)
 - mindsweets [Weihnachts-Bärchen, 75g](https://www.mindsweets.de/75g-Weihnachts-Baerchen-verschiedene-Motive-WeB-Haus) (0.99€)
 - Mondarella [Grill Rogue, 2x95g](https://mondarella.eu/unsere-produkte/mondarella-grill-rouge/) (3.79€)
 - NOT GUILTY [Milly the Star (weiche Fruchtgummis), 90g](https://notguilty-sweetrevolution.com/de/shop/our-sweets/milly-the-star/) (1.00€)
