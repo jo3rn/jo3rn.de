@@ -52,7 +52,7 @@ Look at the release notes of two apps below and decide which one the quote from 
 
 [Release notes: Bugfixes and performance improvements.](https://mastodon.social/@zackwhittaker/109928692642064312)
 
-![Screenshot of release notes for the apps Mastodon & Google Calendar](/images/blog/2024-08-30-release-notes.png)
+![Screenshot of release notes for the apps Mastodon & Google Calendar](/images/blog/2024-09-19-release-notes.png)
 [source](https://mastodon.social/@zackwhittaker/109928692642064312)
 
 The essential part of communication is to deliver what you want to be delivered. If you don't want to deliver anything (“bugfixes and improvements”), then you shouldn't communicate anything (“”).
@@ -87,7 +87,7 @@ The [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) is ea
    >
    > _page 36_
 
-   Admittedly, this no longer has much to do with DRY. But in modern programming languages, properties can be inflated to functions, e.g. in [Kotlin](kotlinlang.org/docs/properties.html) or C++. However, this can lead to misunderstandings. For example, accessing a property should not throw a custom exception or trigger any resource-intensive algorithms.
+   Admittedly, this no longer has much to do with DRY. But in modern programming languages, properties can be inflated to functions, e.g. in [Kotlin](https://kotlinlang.org/docs/properties.html) or C++. However, this can lead to misunderstandings. For example, accessing a property should not throw a custom exception or trigger any resource-intensive algorithms.
 
 3. > (...) 10.000 programs that each contained a different version of Social Security Number validation code (...)
    >
@@ -179,7 +179,7 @@ Even short-running programs can leave footprints. The cropped photo, the 10 line
 
 ### Don't Outrun Your Headlights
 
-Only going is fast as you can see is not only useful in traffic. Take small steps. Test. Ask the users.
+Only going as fast as you can see is not only useful in traffic. Take small steps. Test. Ask the users.
 
 Don't try your hand at fortune telling. The further you want to look into the future, the more likely you are to be wrong and cause yourself unnecessary work. Instead, create the conditions to be able to change things quickly when the time comes. Because you will be wiser in the future.
 
@@ -229,7 +229,7 @@ Error handling is a special feature here. This is because the structures that we
 
 ### Inheritance Tax
 
-A nation state's inheritance tax may not strictly follow this principle, but the following applies to the programming: the more is inherited, the more expensive it can become. Anyone who has ever gotten lost in an inheritance tree will nod in agreement. It gets completely hairy when a class inherits from [several classes](https://en.wikipedia.org/wiki/Multiple_inheritance) (looking at you C++ and Python).
+A nation state's inheritance tax may not strictly follow this principle, but the following applies to programming: the more is inherited, the more expensive it can become. Anyone who has ever gotten lost in an inheritance tree will nod in agreement. It gets completely hairy when a class inherits from [several classes](https://en.wikipedia.org/wiki/Multiple_inheritance) (looking at you C++ and Python).
 
 There are “leaner” ways to achieve goals without the need for inheritance:
 - use interfaces for [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science))

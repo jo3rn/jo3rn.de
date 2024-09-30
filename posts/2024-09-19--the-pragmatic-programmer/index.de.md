@@ -52,7 +52,7 @@ Betrachte die nachfolgenden Release Notes zweier Apps und überlege, auf welches
 
 [Release notes: Bugfixes and performance improvements.](https://mastodon.social/@zackwhittaker/109928692642064312)
 
-![Screenshot der "Release Notes" der Apps Mastodon & Google Kalender](/images/blog/2024-08-30-release-notes.png)
+![Screenshot der "Release Notes" der Apps Mastodon & Google Kalender](/images/blog/2024-09-19-release-notes.png)
 [source](https://mastodon.social/@zackwhittaker/109928692642064312)
 
 Der wesentliche Bestandteil von Kommunikation ist es, das zu übermitteln, was man übermitteln will. Wenn man nichts übermitteln will ("bugfixes and improvements"), dann sollte man auch einfach nichts übermitteln ("").
