@@ -50,7 +50,7 @@ Ja, das ist viel Süßkram und processed food. Für Paprika und Wirsing braucht'
 
 ## Kaffee
 
-
+- Avenir [Klavierröstung, 500g](https://avenir-kaffee.de/produkt/klavierroestung/) (15.90€)
 
 ## Non-Food
 
