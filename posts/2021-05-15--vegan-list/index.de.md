@@ -15,6 +15,7 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 - AH Terra [plantaardige soepballetjes, 200g](https://dutchshopper.com/en/products/terra-plantaardige-soepballetjes-1) (2.45€)
 - bedda [Come on Bert - Vegane Camembert-Alternative, 125g](https://bedda-world.com/produkte/bedda-veganer-weichkaese/come-on-bert/) (3.49€)
 - BRANDGUT [Yes, Pe Can! Pekannuss-Aufstrich, 160g](https://www.brandgut.net/produkt/yes-pe-can/) (2.99€)
+- CLIF Bar [White Chocolate Macadamia Nut (12x 68g)](https://www.clifbar.de/products/clif-bar-weisse-schokolade-macadamianuss/) (21.34€)
 - dmBio [vegane Frikadellen, 200g](https://www.dm.de/dmbio-vegane-frikadellen-p4066447046168.html) (2.95€)
 - dmBio [veganes Pasta Topping (mit Basilikum & Knoblauch), 80g](https://www.dm.de/dmbio-veganes-pasta-topping-mit-basilikum-und-knoblauch-p4066447315530.html) (1.00€)
 - Elephant [Pretzels With A Twist - Caramelised Onion (160g)](https://www.elephantpretzels.com/de/produkte/gedrehte-pretzels-mit-karamellisierten-zwiebeln/) (1.00€)
@@ -29,6 +30,7 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 - mindsweets [Weihnachts-Bärchen, 75g](https://www.mindsweets.de/75g-Weihnachts-Baerchen-verschiedene-Motive-WeB-Haus) (0.99€)
 - Mondarella [Grill Rogue, 2x95g](https://mondarella.eu/unsere-produkte/mondarella-grill-rouge/) (3.79€)
 - NOT GUILTY [Milly the Star (weiche Fruchtgummis), 90g](https://notguilty-sweetrevolution.com/de/shop/our-sweets/milly-the-star/) (1.00€)
+- NOT GUILTY [Vitamin Sea (doppellagige Fruchtgummis), 90g](https://notguilty-sweetrevolution.de/produkte/vitamin-sea/) (1.00€)
 - the nu company [nucao Schokoriegel - Creamy Hazelnut, 33g](https://www.the-nu-company.com/products/nucao-single-creamy-hazelnut-organic-box-of-12-x-33g)
 - Punselie's [Stroopkoekjes, 8x 200g](https://www.punseliewebshop.nl/en/8-stuks-200-grs-tray-punseliekoekjes.html) (14.75€)
 - Schogetten [Salz Karamell, 125g (14 Stück)](https://www.schogetten.de/produkte/vegan/salz-karamell-vegan/) leckerer zähflüssiger Kern, leider jedes Stück einzeln verpackt
@@ -51,6 +53,7 @@ Ja, das ist viel Süßkram und processed food. Für Paprika und Wirsing braucht'
 ## Kaffee
 
 - Avenir [Klavierröstung, 500g](https://avenir-kaffee.de/produkt/klavierroestung/) (15.90€)
+- Flying Roasters [Sunbird, 250g](https://www.flyingroasters.de/en/shop/sunbird-filter-coffee/) (8.30€)
 
 ## Non-Food
 
