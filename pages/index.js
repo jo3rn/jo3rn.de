@@ -43,30 +43,13 @@ export default function Home({ allPostsData, locale }) {
         </ul>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>{t('home:blog-heading')}</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.slice(0, 3).map(({ category, id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/blog/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <DateTimeElement dateString={date} locale={locale} /> ~~ {category}
-              </small>
-            </li>
-          ))}
-        </ul>
-        <Link href="/blog">{t('home:blog-link')}</Link>
-      </section>
-
       <section className={utilStyles.headingMd}>
         <h2 className={utilStyles.headingLg}>Portfolio</h2>
         <p>{t('home:portfolio-work-since', {years: new Date().getFullYear() - 2014})}</p>
         <ul>
           <li key="portfolio-public-goods"><a href="https://github.com/jo3rn/KidsCOOP">Public Goods Experiment</a></li>
           <li key="portfolio-devils-task"><a href="https://github.com/jo3rn/oTree-apps">Devil's Task, Frog Jump & Time Preference</a></li>
-          <li key="portfolio-nudging"><a href="https://github.com/jo3rn/oTree_FFM">Nudging Experiment</a></li>
-          <li key="portfolio-other">{t('home:portfolio-other')}</li>
+          <li key="portfolio-other">{t('home:portfolio-other')}<a href="https://github.com/jo3rn">GitHub</a></li>
         </ul>
       </section>
 
@@ -123,7 +106,43 @@ export default function Home({ allPostsData, locale }) {
               />
             </Link>
           </span>
+          <span>
+            <Link href="https://www.bristol.ac.uk/">
+              <img
+                src="/images/cooperations/bristol.png"
+                height={144}
+                width={144}
+                alt="Logo of University of Bristol"
+              />
+            </Link>
+          </span>
+          <span>
+            <Link href="https://international.au.dk/">
+              <img
+                src="/images/cooperations/aarhus.png"
+                height={144}
+                width={144}
+                alt="Logo of Aarhus University"
+              />
+            </Link>
+          </span>
         </div>
+      </section>
+
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>{t('home:blog-heading')}</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.slice(0, 3).map(({ category, id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              <Link href={`/blog/${id}`}>{title}</Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <DateTimeElement dateString={date} locale={locale} /> ~~ {category}
+              </small>
+            </li>
+          ))}
+        </ul>
+        <Link href="/blog">{t('home:blog-link')}</Link>
       </section>
 
     </Layout>

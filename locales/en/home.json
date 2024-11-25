@@ -5,7 +5,7 @@
   "greeting-server": "hosting, server infrastructure, domain registration",
   "blog-heading": "Latest blog posts",
   "blog-link": "all blog posts",
-  "portfolio-work-since": "I have been developing software for about {{ years }} years.",
-  "portfolio-other": "more upon request",
+  "portfolio-work-since": "I have been developing software professionally for about {{ years }} years.",
+  "portfolio-other": "more upon request and on ",
   "coop-heading": "Successful collaborations"
 }
