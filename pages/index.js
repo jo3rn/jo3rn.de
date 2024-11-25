@@ -40,7 +40,6 @@ export default function Home({ allPostsData, locale }) {
         <ul>
           <li key="mastodon"><a rel="me" href="https://mastodon.social/@jo3rn">Mastodon</a></li>
           <li key="linkedin"><a href="https://www.linkedin.com/in/jo3rn">LinkedIn</a></li>
-          <li key="email"><a href="mailto:website@jo3rn.de">website@jo3rn.de</a></li>
         </ul>
       </section>
 
