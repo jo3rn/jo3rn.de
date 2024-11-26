@@ -56,7 +56,7 @@
 }
 
 .coops {
-  background-color: #FFF;
+  background-color: var(--background-coops);
   text-align: center;
   border: 5px solid #00600f;
 }

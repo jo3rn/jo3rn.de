@@ -2,11 +2,13 @@
   /* default theme */
   --background: white;
   --foreground: #121212;
+  --background-coops: #eee;
 }
 
 [data-theme='dark'] {
   --background: #121212;
   --foreground: white;
+  --background-coops: #bbb;
 }
 
 html,
