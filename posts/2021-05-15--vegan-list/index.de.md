@@ -33,10 +33,13 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 - NOT GUILTY [Vitamin Sea (doppellagige Fruchtgummis), 90g](https://notguilty-sweetrevolution.de/produkte/vitamin-sea/) (1.00€)
 - the nu company [nucao Schokoriegel - Creamy Hazelnut, 33g](https://www.the-nu-company.com/products/nucao-single-creamy-hazelnut-organic-box-of-12-x-33g)
 - Punselie's [Stroopkoekjes, 8x 200g](https://www.punseliewebshop.nl/en/8-stuks-200-grs-tray-punseliekoekjes.html) (14.75€)
+- Redefine Meat [Redefine Bratwurst, 200g](https://www.redefinemeat.com/de/products/redefine-bratwurst/) (2.74€) - nicht tiefgekühlt, sodass sich die (essbare) Hülle vor dem Braten entfernen lässt, falls man die nicht mag
+- Redefine Meat [Redefine Mince, 250g](https://www.redefinemeat.com/de/products/redefine-beef-mince/) (2.74€) - Hack, das saftig bleibt
 - Schogetten [Salz Karamell, 125g (14 Stück)](https://www.schogetten.de/produkte/vegan/salz-karamell-vegan/) leckerer zähflüssiger Kern, leider jedes Stück einzeln verpackt
 - Taifun [Grillknacker, 250g](https://www.taifun-tofu.de/de/produkte/tofu-wuerstchen-grillknacker) (3.79€)
 - Terra Vegane [Prima-Topper Streualternative](https://www.shop.terravegane.com/products/prima-topper-classic-style) (1.49€)
 - Unox [Cup a Soup - Tomaat](https://www.holland-shop.com/p/cup-a-soup-tomaat-tomatensuppe-24-packungen-a-165-ml-by-unox) (24 Stück, 15.49€)
+- Vantastic Foods [Schakka Lotta, 100g](https://www.velivery.com/de/vegane-lebensmittel/vantastic-foods-vantastic-schakalotta-100g) (Gratisbeilage zur Bestellung, normal 1.95€) 
 - veganz [Bliss Ball Coconut, 42g](https://veganz.de/produkt/bio-veganz-bliss-ball-coconut/) (1.59€)
 - veganz [Choc Bar - Coconut, 40g](https://veganz.de/produkt/veganz-choc-bar-coconut-40g/) (1.49€)
 - veganz [Choc Bar - Peanut Caramel, 50g](https://veganz.de/produkt/bio-veganz-choc-bar-peanut-caramel/) (1.99€)
@@ -53,7 +56,9 @@ Ja, das ist viel Süßkram und processed food. Für Paprika und Wirsing braucht'
 ## Kaffee
 
 - Avenir [Klavierröstung, 500g](https://avenir-kaffee.de/produkt/klavierroestung/) (15.90€)
+- Barista Royal [Café Leon, 1kg](https://baristaroyal.de/products/guatemala-cafe-leon-bio) (29.99€)
 - Flying Roasters [Sunbird, 250g](https://www.flyingroasters.de/en/shop/sunbird-filter-coffee/) (8.30€)
+- Kollektive Kaffeerösterei [starker Tropfen, 500g](https://www.la-gota-negra.de/shop/filterkaffee-starker-tropfen/) (14.50€)
 
 ## Non-Food
 
@@ -61,6 +66,7 @@ Ja, das ist viel Süßkram und processed food. Für Paprika und Wirsing braucht'
   Achtung, die Firma stellt auch Wachstücher aus Bienenwachs her
 - [Trendraider Box](https://trendraider.de/) (30€/Monat)
   in 2020 bekamen wir die Box monatlich für ein Jahr als Geschenk. Es gab ein paar schöne Sachen zu entdecken, auch Lebensmittel, insgesamt war für meinen Geschmack aber zu viel Beauty/Lifestyle/Kosmetik Schnick-Schnack dabei. Als Geschenk trotzdem nett.
+- VLiC VLAC [Memo-Spiel](https://www.vlicvlac.com/product-page/memo-spiel) (14.99€) Memory-Spiel als Geschenk für Kinder
 
 ## No-Gos
 
