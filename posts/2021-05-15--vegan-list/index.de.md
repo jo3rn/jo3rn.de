@@ -14,11 +14,16 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 
 - AH Terra [plantaardige soepballetjes, 200g](https://dutchshopper.com/en/products/terra-plantaardige-soepballetjes-1) (2.45€)
 - bedda [Come on Bert - Vegane Camembert-Alternative, 125g](https://bedda-world.com/produkte/bedda-veganer-weichkaese/come-on-bert/) (3.49€)
+- bettr [Box of Peanut Nut Butter Cups, 156g (12 Stück)](https://bettr-food.com/products/box-of-peanut-nut-butter-cups-bio-156g-12x13g-bettr) (6.49€)
+- bettr [Nut Butter Cups with Peanut Cream, 12x 39g](https://bettr-food.com/products/nut-butter-cups-with-peanut-cream-bio-bett-r-full-box-12x39g) (12.89€)
+- bettr [Protein Granola Peanut and Cacao, 300g](https://bettr-food.com/products/granola-peanut-cacao-protein-bio-bettr-300g) (3.99€)
 - BRANDGUT [Yes, Pe Can! Pekannuss-Aufstrich, 160g](https://www.brandgut.net/produkt/yes-pe-can/) (2.99€)
 - CLIF Bar [White Chocolate Macadamia Nut (12x 68g)](https://www.clifbar.de/products/clif-bar-weisse-schokolade-macadamianuss/) (21.34€)
 - dmBio [vegane Frikadellen, 200g](https://www.dm.de/dmbio-vegane-frikadellen-p4066447046168.html) (2.95€)
 - dmBio [veganes Pasta Topping (mit Basilikum & Knoblauch), 80g](https://www.dm.de/dmbio-veganes-pasta-topping-mit-basilikum-und-knoblauch-p4066447315530.html) (1.00€)
 - Elephant [Pretzels With A Twist - Caramelised Onion (160g)](https://www.elephantpretzels.com/de/produkte/gedrehte-pretzels-mit-karamellisierten-zwiebeln/) (1.00€)
+- enerBIO [vegane Currywurst, 250g](https://www.rossmann.de/de/lebensmittel-enerbio-vegane-currywurst/p/4305615926803) (2.99€)
+- EVOBAR [Vegan Protein Bar White Peanut Crunch, 720g (12 Stück)](https://evosportsfuel.de/en/products/evobar-vegan?variant=44980685242633) (30.51€)
 - Fine Gusto [Vegan Jerky BBQ, 50g](https://kokku-online.de/fine-gusto-nature-vegan-jerky-bbq/) (1.99€), _Fine Gusto_ ist leider auch dick im _Beef_ Jerky Geschäft, aber deshalb kennen sie sich mit dem Würzen aus
 - Frosta [Gemüse Bowl Cremiges Linsen Curry mit Kürbis und Spinat, 480g](https://www.frosta.de/produkte/tiefkuehlgemuese/gemuese-bowl-cremiges-linsen-curry-mit-kuerbis-und-spinat/)
   zusammen mit etwas zusätzlichem Tiefkühlspinat zubereitet
@@ -36,6 +41,7 @@ Die Links führen entweder direkt zur Herstellerseite oder zu einem Online-Händ
 - Redefine Meat [Redefine Bratwurst, 200g](https://www.redefinemeat.com/de/products/redefine-bratwurst/) (2.74€) - nicht tiefgekühlt, sodass sich die (essbare) Hülle vor dem Braten entfernen lässt, falls man die nicht mag
 - Redefine Meat [Redefine Mince, 250g](https://www.redefinemeat.com/de/products/redefine-beef-mince/) (2.74€) - Hack, das saftig bleibt
 - Schogetten [Salz Karamell, 125g (14 Stück)](https://www.schogetten.de/produkte/vegan/salz-karamell-vegan/) leckerer zähflüssiger Kern, leider jedes Stück einzeln verpackt
+- Taiao [Knusprige Kichererbsen - White-Vanilla, 80g](https://www.taiaofoods.de/products/knusprige-kichererbsen-dunkle-schokolade-5er-pack) (2.99€)
 - Taifun [Grillknacker, 250g](https://www.taifun-tofu.de/de/produkte/tofu-wuerstchen-grillknacker) (3.79€)
 - Terra Vegane [Prima-Topper Streualternative](https://www.shop.terravegane.com/products/prima-topper-classic-style) (1.49€)
 - Unox [Cup a Soup - Tomaat](https://www.holland-shop.com/p/cup-a-soup-tomaat-tomatensuppe-24-packungen-a-165-ml-by-unox) (24 Stück, 15.49€)
@@ -57,7 +63,12 @@ Ja, das ist viel Süßkram und processed food. Für Paprika und Wirsing braucht'
 
 - Avenir [Klavierröstung, 500g](https://avenir-kaffee.de/produkt/klavierroestung/) (15.90€)
 - Barista Royal [Café Leon, 1kg](https://baristaroyal.de/products/guatemala-cafe-leon-bio) (29.99€)
+- Barista Royal [Pulau Kopi, 1kg](https://baristaroyal.de/products/indonesien-pulau-kopi) (32.99€)
+- Elephant Beans [Shilicho, 250g](https://www.elephantbeans.de/produkt/kaffee/gourmet-bio-kaffee-shilicho-athiopien-kaufen/) (9.60€)
+- Flying Roasters [Ostrich, 250g](https://www.flyingroasters.de/en/shop/ostrich/) (8.90€)
 - Flying Roasters [Sunbird, 250g](https://www.flyingroasters.de/en/shop/sunbird-filter-coffee/) (8.30€)
+- Kaffeekollektiv Aroma Zapatista [Fuego y Palabra, 500g](https://www.aroma-zapatista.de/einkaufen/filterkaffee/filterkaffee-fuegoypalabra-bohne-500g-bio-chiapas) (11.10€)
+- Kaffeemacher:innen [Amigo, 250g](https://kaffeemacher.de/products/amigo-filterkaffee) (7.90€)
 - Kollektive Kaffeerösterei [starker Tropfen, 500g](https://www.la-gota-negra.de/shop/filterkaffee-starker-tropfen/) (14.50€)
 
 ## Non-Food
@@ -72,6 +83,7 @@ Ja, das ist viel Süßkram und processed food. Für Paprika und Wirsing braucht'
 
 Hier auch noch eine **"Deny"-Liste** an Produkten, die mir nicht gefallen haben.
 
+- bettr [Peanut Butter Bar, 20x 30g](https://bettr-food.com/products/peanut-butter-bar-bio-bettr-full-box-20x30g) (14.39€)
 - Hobelz [Bratgriller Curry, 250g](https://kokku-online.de/hobelz-veggie-world-bratgriller-curry/) (2.79€)
   Geschmack zu fad
 - Schogetten [Cocoa Cookie](https://www.schogetten.de/produkte/vegan/cocoa-cookie-vegan/)
